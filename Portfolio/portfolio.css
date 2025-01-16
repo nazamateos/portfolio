@@ -925,48 +925,44 @@ body {
 
 /* SOCIAL MEDIA */
 
-#slider {
-  width: 30%; /* Ocupa el 80% del ancho de la pantalla */
-  max-width: 2000px; /* Limita el ancho máximo al tamaño de las imágenes */
+#emociones {
+  width: 30%; 
+  max-width: 2000px;
   position: relative;
 }
 
-/* Contenedor de las imágenes (slider) */
-.slider-container {
-  display: flex; /* Coloca las imágenes en línea horizontal */
+.emociones-container {
+  display: flex; 
   transition: transform 0.5s ease-in-out;
-  width: 100%; /* Asegura que ocupe todo el ancho del contenedor principal */
-  height: 100%; /* Asegura que mantenga la misma altura que el contenedor principal */
+  width: 100%; 
+  height: 100%; 
 }
 
-/* Cada slide (imagen individual) */
-.slider-item {
-  flex: 0 0 100%; /* Cada slide ocupa exactamente el 100% del ancho del contenedor */
-  height: 100%; /* Cada slide tiene la misma altura que el contenedor principal */
+.emociones-item {
+  flex: 0 0 100%; 
+  height: 100%; 
   box-sizing: border-box;
 }
 
-/* Imágenes dentro de los slides */
-.slider-item img {
-  width: 100%; /* Ajusta la imagen al ancho del slide */
-  height: 100%; /* Ajusta la imagen a la altura del slide */
-  object-fit: cover; /* Recorta o escala proporcionalmente para llenar el espacio */
+.emociones-item img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
   display: block;
-  margin: 0 auto; /* Centra la imagen horizontalmente */
+  margin: 0 auto; 
 }
 
-/* Botones de navegación */
-.slider-navigation {
+.emociones-navigation {
   display: flex;
   justify-content: space-between;
   gap: 1300px;
-  align-items: center; /* Centra los botones verticalmente */
+  align-items: center;
   position: absolute;
-  top: 50%; /* Coloca los botones en el centro vertical del slider */
+  top: 50%; 
   left: 0;
   width: 100%;
-  transform: translateY(-50%); /* Asegura el centrado vertical exacto */
-  z-index: 10; /* Asegura que los botones estén sobre las imágenes */
+  transform: translateY(-50%);
+  z-index: 10; 
 }
 
 .nav-button {
@@ -982,13 +978,13 @@ body {
   background-color: rgb(255, 255, 255);
 }
 
-/* Opcional: Asegura que los botones no se superpongan al contenido */
+
 .nav-button.prev-button {
-  margin-left: 10px; /* Espacio a la izquierda */
+  margin-left: 10px; 
 }
 
 .nav-button.next-button {
-  margin-right: 300px; /* Espacio a la derecha */
+  margin-right: 300px; 
 }
 
 

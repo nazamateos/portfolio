@@ -92,53 +92,86 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-// SOCIAL MEDIA
-let currentIndex = 0;
+// SOCIAL MEDIA 
+// emociones
+let currentIndexEmociones = 0;
 
-// Función para navegar por las imágenes
-function navigate(direction) {
-  const galleryContainer = document.querySelector('.slider-container');
-  const totalImages = document.querySelectorAll('.slider-item').length;
+function navigateEmociones(direction) {
+  const galleryContainer = document.querySelector('.emociones-container');
+  const totalImages = document.querySelectorAll('.emociones-item').length;
 
-  // Ajustar el índice de la imagen actual
-  currentIndex = (currentIndex + direction + totalImages) % totalImages;
+  currentIndexEmociones = (currentIndexEmociones + direction + totalImages) % totalImages;
 
-  // Calcular el desplazamiento
-  const offset = -currentIndex * 100; // Cada slide ocupa el 100%
+  const offset = -currentIndexEmociones * 100;
   galleryContainer.style.transform = `translateX(${offset}%)`;
 }
 
-// Botones de navegación
-document.querySelector('.prev-button').addEventListener('click', () => {
-  navigate(-1);
+document.querySelector('.emociones-navigation__button--prev').addEventListener('click', () => {
+  navigateEmociones(-1);
 });
 
-document.querySelector('.next-button').addEventListener('click', () => {
-  navigate(1);
+document.querySelector('.emociones-navigation__button--next').addEventListener('click', () => {
+  navigateEmociones(1);
 });
 
-// Autoplay
-let autoplayInterval = null;
+let autoplayIntervalEmociones = null;
 
-function startAutoplay(interval) {
-  stopAutoplay();
-  autoplayInterval = setInterval(() => {
-    navigate(1);
+function startAutoplayEmociones(interval) {
+  stopAutoplayEmociones();
+  autoplayIntervalEmociones = setInterval(() => {
+    navigateEmociones(1);
   }, interval);
 }
 
-function stopAutoplay() {
-  clearInterval(autoplayInterval);
+function stopAutoplayEmociones() {
+  clearInterval(autoplayIntervalEmociones);
 }
 
-startAutoplay(3000); // Cambiar cada 3 segundos
+startAutoplayEmociones(3000);
 
-// Detener autoplay al hacer clic en un botón
-document.querySelectorAll('.nav-button').forEach(button => {
-  button.addEventListener('click', stopAutoplay);
+document.querySelectorAll('.nav-button-emociones').forEach(button => {
+  button.addEventListener('click', stopAutoplayEmociones);
 });
 
+// magic
+let currentIndexMagic = 0;
 
+function navigateMagic(direction) {
+  const galleryContainer = document.querySelector('.magic-container');
+  const totalImages = document.querySelectorAll('.magic-item').length;
+
+  currentIndexMagic = (currentIndexMagic + direction + totalImages) % totalImages;
+
+  const offset = -currentIndexMagic * 100;
+  galleryContainer.style.transform = `translateX(${offset}%)`;
+}
+
+document.querySelector('.prev-button-magic').addEventListener('click', () => {
+  navigateMagic(-1);
+});
+
+document.querySelector('.next-button-magic').addEventListener('click', () => {
+  navigateMagic(1);
+});
+
+let autoplayIntervalMagic = null;
+
+function startAutoplayMagic(interval) {
+  stopAutoplayMagic();
+  autoplayIntervalMagic = setInterval(() => {
+    navigateMagic(1);
+  }, interval);
+}
+
+function stopAutoplayMagic() {
+  clearInterval(autoplayIntervalMagic);
+}
+
+startAutoplayMagic(3000);
+
+document.querySelectorAll('.nav-button-magic').forEach(button => {
+  button.addEventListener('click', stopAutoplayMagic);
+});
 
 
 
