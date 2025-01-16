@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Porfolio</title>
+  <script defer src="portfolio.js"></script>
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header__container">
+
+      <div class="header__logo-container">
+        <a href="index.html" class="header__logo">nacontilde</a>
+      </div>
+
+
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li class="header__menu-item"><a href="About.html" class="header__menu-link">Sobre Mi</a></li>
+
+
+          <li class="header__menu-item header__menu-item--dropdown">
+            <a href="Servicios.html" class="header__menu-link">Servicios</a>
+            <ul class="header__submenu">
+              <li class="header__submenu-item"><a href="Fotografia.html" class="header__submenu-link">Fotografía</a>
+              </li>
+              <li class="header__submenu-item"><a href="Packaging.html" class="header__submenu-link">Packaging</a></li>
+              <li class="header__submenu-item"><a href="SM.html" class="header__submenu-link">Social
+                  Media</a></li>
+              <li class="header__submenu-item"><a href="Branding.html" class="header__submenu-link">Branding</a></li>
+            </ul>
+          </li>
+
+          <li class="header__menu-item"><a href="Work.html" class="header__menu-link">Work</a></li>
+          <li class="header__menu-item"><a href="Contacto.html" class="header__menu-link">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+    <!-- CUERPO-->
+    <section class="fotografia">
+        <h1 class="fotografia__title">PACKAGING.</h1>
+        <h2 class="fotografia__subtitle">Cada imagen cuenta una historia, y en la fotografía publicitaria, esas historias conectan marcas con personas.</h2>
+        <p class="fotografia__text">Aquí encontrarás una selección de mis trabajos. Desde composiciones hasta detalles que marcan la diferencia, mi objetivo es transmitir los valores y el mensaje de cada producto o campaña.</p>
+        
+    </section>
+
+
+    <div class="work">
+        <div class="work__gallery">
+            <div class="work__item">
+                <img class="work__image" src="packaging/caja.jpg" alt="Imagen 1"
+                    onclick="openModal('packaging/caja.jpg', 'Diseño de packaging para marca de algas comestibles ')" />
+                <div class="work__item">
+                    <img class="work__image" src="packaging/packaging.jpg" alt="Imagen 2"
+                        onclick="openModal('packaging/packaging.jpg', 'Diseño de packaging para marca de algas comestibles')" />
+                </div>
+            </div>
+
+            <div class="work__item">
+                <img class="work__image" src="packaging/perfume.jpg" alt="Imagen 3"
+                    onclick="openModal('packaging/perfume.jpg', 'Rediseño de packaging perfume ')" />
+                <div class="work__item">
+                    <img class="work__image" src="packaging/perfumedos.jpg" alt="Imagen 4"
+                        onclick="openModal('packaging/perfumedos.jpg', 'Rediseño de packaging perfume')" />
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="modal" id="modal">
+            <div class="modal__content">
+                <button class="modal__close-button" id="modalCloseButton">Cerrar</button>
+                <img class="modal__image" id="modalImage" src="" alt="" />
+                <p class="modal__description" id="modalDescription"></p>
+            </div>
+        </div>
+      
+   
+      <div class="modal" id="modal">
+        <div class="modal__content">
+            <button class="modal__close-button" id="modalCloseButton">Cerrar</button>
+            <img class="modal__image" id="modalImage" src="" alt="" />
+            <p class="modal__description" id="modalDescription"></p>
+        </div>
+    </div>
+      
+    
+      
+
+
+      
+      
+        
+
+
+
+
+    <!--FOOTER-->
+
+    <footer class="footer">
+        <div class="footer__contenido">
+            <p class="footer__intro">¿Estás interesado?</p>
+            <h2 class="footer__title">Contacta conmigo</h2>
+            <p class="footer__text"> a través de:</p>
+            <div class="footer__contacto">
+                <a href="mailto:nazaretgrafica@gmail.com" class="footer__link">nazaretgrafica@gmail.com</a>
+                <p class="footer__link">686029367</p>
+            </div>
+            <p class="footer__text"> o en cualquiera de estas redes:</p>
+            <div class="footer__socials">
+                <a href="https://www.linkedin.com/in/nazaretmateos/" class="footer__social" aria-label="LinkedIn"
+                    target="_blank">
+                    <img src="fotos/linkedin.png"
+                        alt="LinkedIn" class="footer__icon">
+                </a>
+                <a href="https://www.instagram.com/nacontilde/" class="footer__social" aria-label="Instagram"
+                    target="_blank">
+                    <img src="fotos/instagram.png"
+                        alt="Instagram" class="footer__icon">
+                </a>
+                <a href="https://www.behance.net/nazaretmateosgarcia" class="footer__social" aria-label="Behance"
+                    target="_blank">
+                    <img src="fotos/Behance-icon-01.png" alt="Behance"
+                        class="footer__icon">
+                </a>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p class="footer__copyright">
+                © 2025 Nazaret Mateos | nacontilde
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        function openModal(imageSrc, description) {
+            const modal = document.getElementById('modal');
+            const modalImage = document.getElementById('modalImage');
+            const modalDescription = document.getElementById('modalDescription');
+
+            modalImage.src = imageSrc;
+            modalDescription.textContent = description;
+
+            modal.style.display = 'flex';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('modal');
+            modal.style.display = 'none';
+        }
+
+        document.getElementById('modalCloseButton').addEventListener('click', closeModal);
+
+        document.getElementById('modal').addEventListener('click', function (e) {
+            if (e.target.id === 'modal') {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+
+</html>
