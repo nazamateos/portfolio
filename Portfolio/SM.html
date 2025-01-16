@@ -2,53 +2,56 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Porfolio</title>
-  <script defer src="portfolio.js"></script>
-  <link rel="stylesheet" href="portfolio.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfolio</title>
+    <script defer src="portfolio.js"></script>
+    <link rel="stylesheet" href="portfolio.css">
 </head>
 
 <body>
-  <!-- HEADER -->
-  <header class="header">
-    <div class="header__container">
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header__container">
 
-      <div class="header__logo-container">
-        <a href="index.html" class="header__logo">nacontilde</a>
-      </div>
+            <div class="header__logo-container">
+                <a href="index.html" class="header__logo">nacontilde</a>
+            </div>
 
-      <button class="header__toggle" aria-label="Abrir menú">☰</button>
-      <nav class="header__nav">
-        <ul class="header__menu">
-          <li class="header__menu-item"><a href="About.html" class="header__menu-link">Sobre Mi</a></li>
+            <button class="header__toggle" aria-label="Abrir menú">☰</button>
+            <nav class="header__nav">
+                <ul class="header__menu">
+                    <li class="header__menu-item"><a href="About.html" class="header__menu-link">Sobre Mi</a></li>
 
 
-          <li class="header__menu-item header__menu-item--dropdown">
-            <a href="Servicios.html" class="header__menu-link">Servicios</a>
-            <ul class="header__submenu">
-              <li class="header__submenu-item"><a href="Fotografia.html" class="header__submenu-link">Fotografía</a>
-              </li>
-              <li class="header__submenu-item"><a href="Packaging.html" class="header__submenu-link">Packaging</a></li>
-              <li class="header__submenu-item"><a href="SM.html" class="header__submenu-link">Social
-                  Media</a></li>
-              <li class="header__submenu-item"><a href="Branding.html" class="header__submenu-link">Branding</a></li>
-            </ul>
-          </li>
+                    <li class="header__menu-item header__menu-item--dropdown">
+                        <a href="Servicios.html" class="header__menu-link">Servicios</a>
+                        <ul class="header__submenu">
+                            <li class="header__submenu-item"><a href="Fotografia.html"
+                                    class="header__submenu-link">Fotografía</a>
+                            </li>
+                            <li class="header__submenu-item"><a href="Packaging.html"
+                                    class="header__submenu-link">Packaging</a></li>
+                            <li class="header__submenu-item"><a href="SM.html" class="header__submenu-link">Social
+                                    Media</a></li>
+                            <li class="header__submenu-item"><a href="Branding.html"
+                                    class="header__submenu-link">Branding</a></li>
+                        </ul>
+                    </li>
 
-          <li class="header__menu-item"><a href="Work.html" class="header__menu-link">Work</a></li>
-          <li class="header__menu-item"><a href="Contacto.html" class="header__menu-link">Contacto</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+                    <li class="header__menu-item"><a href="Work.html" class="header__menu-link">Work</a></li>
+                    <li class="header__menu-item"><a href="Contacto.html" class="header__menu-link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
     <!-- SLIDER-->
-       <!-- emociones-->
+    <!-- emociones-->
     <section id="emociones">
         <div class="emociones-container">
             <figure class="emociones-item">
-                <img src="SocialMedia/emociones.jpg" alt="Imagen 1"> 
+                <img src="SocialMedia/emociones.jpg" alt="Imagen 1">
             </figure>
             <figure class="emociones-item">
                 <img src="SocialMedia/alegria.jpg" alt="Imagen 2">
@@ -79,16 +82,16 @@
             </figure>
         </div>
         <div class="emociones-navigation">
-            <button class="emociones-navigation__button emociones-navigation__button--prev">Anterior</button>
-            <button class="emociones-navigation__button emociones-navigation__button--next">Siguiente</button>
-          </div>
+            <button class="emociones-navigation__button emociones-navigation__button--prev">&#8249;</button>
+            <button class="emociones-navigation__button emociones-navigation__button--next"> &#8250;</button>
+        </div>
     </section>
 
-        <!-- magic-->
+    <!-- magic-->
     <section id="magic">
         <div class="magic-container">
             <figure class="magic-item">
-                <img src="SocialMedia/proteins.jpg" alt="Imagen 1"> 
+                <img src="SocialMedia/proteins.jpg" alt="Imagen 1">
             </figure>
             <figure class="magic-item">
                 <img src="SocialMedia/chica.jpg" alt="Imagen 2">
@@ -96,22 +99,37 @@
             <figure class="magic-item">
                 <img src="SocialMedia/constancia.jpg" alt="Imagen 3">
             </figure>
-            <figure class="magic-item">
-                <img src="" alt="Imagen 3">
-            </figure>
         </div>
-        <nav class="magic-navigation">
-            <button class="nav-button prev-button">Anterior</button>
-            <button class="nav-button next-button">Siguiente</button>
-        </nav>
+        <div class="magic-navigation">
+            <button class="magic-navigation__button magic-navigation__button--prev">&#8249;</button>
+            <button class="magic-navigation__button magic-navigation__button--next">&#8250;</button>
+        </div>
     </section>
 
 
-         <!-- qaizzo -->
+
+    <!-- post -->
+    <section id="post">
+        <div class="post-container">
+            <figure class="post-item">
+                <img src="SocialMedia/textos.jpg" alt="Imagen 1">
+            </figure>
+            <figure class="post-item">
+                <img src="SocialMedia/reels.jpg" alt="Imagen 2">
+            </figure>
+            <figure class="post-item">
+                <img src="SocialMedia/medidas.jpg" alt="Imagen 3">
+            </figure>
+        </div>
+    </section>
+
+
+
+    <!-- qaizzo -->
     <section id="qaizzo">
         <div class="qaizzo-container">
             <figure class="qaizzo-item">
-                <img src="SocialMedia/vender.jpg" alt="Imagen 1"> 
+                <img src="SocialMedia/vender.jpg" alt="Imagen 1">
             </figure>
             <figure class="qaizzo-item">
                 <img src="SocialMedia/clientes.jpg" alt="Imagen 2">
@@ -120,43 +138,25 @@
                 <img src="SocialMedia/audencia.jpg" alt="Imagen 3">
             </figure>
             <figure class="qaizzo-item">
-                <img src="SocialMedia/vender.jpg" alt="Imagen 4">
+                <img src="SocialMedia/resultados.jpg" alt="Imagen 4">
             </figure>
             <figure class="qaizzo-item">
-                <img src="" alt="Imagen 5">
+                <img src="SocialMedia/cliente.jpg" alt="Imagen 5">
             </figure>
             <figure class="qaizzo-item">
-                <img src="" alt="Imagen 6">
-            </figure>
-            <figure class="qaizzo-item">
-                <img src="" alt="Imagen 7">
+                <img src="SocialMedia/pregunta.jpg" alt="Imagen 6">
             </figure>
         </div>
-        <nav class="qaizzo-navigation">
-            <button class="nav-button prev-button">Anterior</button>
-            <button class="nav-button next-button">Siguiente</button>
-        </nav>
-    </section>
-
-
-    <section id="slider">
-        <div class="slider-container">
-            <figure class="slider-item">
-                <img src="SocialMedia/textos.jpg" alt="Imagen 1"> 
-            </figure>
-            <figure class="slider-item">
-                <img src="SocialMedia/reels.jpg" alt="Imagen 2">
-            </figure>
-            <figure class="slider-item">
-                <img src="SocialMedia/medidas.jpg" alt="Imagen 3">
-            </figure>
-            <figure class="slider-item">
-                <img src="SocialMedia/vender.jpg" alt="Imagen 4">
-            </figure>
+        <div class="qaizzo-navigation">
+            <button class="qaizzo-navigation__button qaizzo-navigation__button--prev">&#8249;</button>
+            <button class="qaizzo-navigation__button qaizzo-navigation__button--next">&#8250;</button>
         </div>
     </section>
 
-        
+
+  
+
+
 
 
 
@@ -176,18 +176,15 @@
             <div class="footer__socials">
                 <a href="https://www.linkedin.com/in/nazaretmateos/" class="footer__social" aria-label="LinkedIn"
                     target="_blank">
-                    <img src="fotos/linkedin.png"
-                        alt="LinkedIn" class="footer__icon">
+                    <img src="fotos/linkedin.png" alt="LinkedIn" class="footer__icon">
                 </a>
                 <a href="https://www.instagram.com/nacontilde/" class="footer__social" aria-label="Instagram"
                     target="_blank">
-                    <img src="fotos/instagram.png"
-                        alt="Instagram" class="footer__icon">
+                    <img src="fotos/instagram.png" alt="Instagram" class="footer__icon">
                 </a>
                 <a href="https://www.behance.net/nazaretmateosgarcia" class="footer__social" aria-label="Behance"
                     target="_blank">
-                    <img src="fotos/Behance-icon-01.png" alt="Behance"
-                        class="footer__icon">
+                    <img src="fotos/Behance-icon-01.png" alt="Behance" class="footer__icon">
                 </a>
             </div>
         </div>

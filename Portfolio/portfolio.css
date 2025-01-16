@@ -925,8 +925,9 @@ body {
 
 /* SOCIAL MEDIA */
 
+/* emociones */
 #emociones {
-  width: 30%; 
+  width: 25%; 
   max-width: 2000px;
   position: relative;
 }
@@ -965,7 +966,7 @@ body {
   z-index: 10; 
 }
 
-.nav-button {
+.emociones-navigation__button {
   background-color: rgba(255, 255, 255, 0.866);
   color: rgb(0, 0, 0);
   border: none;
@@ -974,30 +975,213 @@ body {
   border-radius: 5px;
 }
 
-.nav-button:hover {
+.emociones-navigation__button:hover {
   background-color: rgb(255, 255, 255);
 }
 
 
-.nav-button.prev-button {
+.emociones-navigation__button.emociones-navigation__button--prev {
   margin-left: 10px; 
 }
 
-.nav-button.next-button {
+.emociones-navigation__button.emociones-navigation__button--next {
+  margin-right: 300px; 
+}
+
+/* magic */
+#magic {
+  width: 25%; 
+  max-width: 2000px;
+  position: relative;
+}
+
+.magic-container {
+  display: flex; 
+  transition: transform 0.5s ease-in-out;
+  width: 100%; 
+  height: 100%; 
+  margin-left: 50px;
+}
+
+.magic-item {
+  flex: 0 0 100%; 
+  height: 100%; 
+  box-sizing: border-box;
+}
+
+.magic-item img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+  display: block;
+  margin: 0 auto; 
+}
+
+.magic-navigation {
+  display: flex;
+  justify-content: space-between;
+  gap: 1300px;
+  align-items: center;
+  position: absolute;
+  top: 50%; 
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+  z-index: 10; 
+}
+
+.magic-navigation__button {
+  background-color: rgba(255, 255, 255, 0.866);
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.magic-navigation__button:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+
+.magic-navigation__button.magic-navigation__button--prev {
+  margin-left: 10px; 
+}
+
+.magic-navigation__button.magic-navigation__button--next {
   margin-right: 300px; 
 }
 
 
+/* post */
+#post {
+  width: 25%; 
+  max-width: 2000px;
+  position: relative;
+}
+
+.post-container {
+  display: flex; 
+  transition: transform 0.5s ease-in-out;
+  width: 100%; 
+  height: 100%; 
+  margin-left: 50px;
+}
+
+.post-item {
+  flex: 0 0 100%; 
+  height: 100%; 
+  box-sizing: border-box;
+}
+
+.post-item img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+  display: block;
+  margin: 0 auto; 
+}
+
+.post-navigation {
+  display: flex;
+  justify-content: space-between;
+  gap: 1300px;
+  align-items: center;
+  position: absolute;
+  top: 50%; 
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+  z-index: 10; 
+}
+
+.post-navigation__button {
+  background-color: rgba(255, 255, 255, 0.866);
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.post-navigation__button:hover {
+  background-color: rgb(255, 255, 255);
+}
 
 
+.post-navigation__button.post-navigation__button--prev {
+  margin-left: 10px; 
+}
+
+.post-navigation__button.post-navigation__button--next {
+  margin-right: 300px; 
+}
 
 
+/* qaizzo */
+#qaizzo {
+  width: 25%; 
+  max-width: 2000px;
+  position: relative;
+}
+
+.qaizzo-container {
+  display: flex; 
+  transition: transform 0.5s ease-in-out;
+  width: 100%; 
+  height: 100%; 
+}
+
+.qaizzo-item {
+  flex: 0 0 100%; 
+  height: 100%; 
+  box-sizing: border-box;
+}
+
+.qaizzo-item img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+  display: block;
+  margin: 0 auto; 
+}
+
+.qaizzo-navigation {
+  display: flex;
+  justify-content: space-between;
+  gap: 1300px;
+  align-items: center;
+  position: absolute;
+  top: 50%; 
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+  z-index: 10; 
+}
+
+.qaizzo-navigation__button {
+  background-color: rgba(255, 255, 255, 0.866);
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.qaizzo-navigation__button:hover {
+  background-color: rgb(255, 255, 255);
+}
 
 
+.qaizzo-navigation__button.qaizzo-navigation__button--prev {
+  margin-left: 10px; 
+}
 
+.qaizzo-navigation__button.qaizzo-navigation__button--next {
+  margin-right: 300px; 
+}
 
-
-
+/* media queries */
 
 
 

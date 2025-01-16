@@ -77,14 +77,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
   modalClose.addEventListener('click', () => {
     modal.classList.remove('modal--open');
-    modalImage.src = ''; 
+    modalImage.src = '';
   });
 
 
   modal.addEventListener('click', (e) => {
     if (e.target === modal) {
       modal.classList.remove('modal--open');
-      modalImage.src = ''; 
+      modalImage.src = '';
     }
   });
 });
@@ -114,24 +114,7 @@ document.querySelector('.emociones-navigation__button--next').addEventListener('
   navigateEmociones(1);
 });
 
-let autoplayIntervalEmociones = null;
 
-function startAutoplayEmociones(interval) {
-  stopAutoplayEmociones();
-  autoplayIntervalEmociones = setInterval(() => {
-    navigateEmociones(1);
-  }, interval);
-}
-
-function stopAutoplayEmociones() {
-  clearInterval(autoplayIntervalEmociones);
-}
-
-startAutoplayEmociones(3000);
-
-document.querySelectorAll('.nav-button-emociones').forEach(button => {
-  button.addEventListener('click', stopAutoplayEmociones);
-});
 
 // magic
 let currentIndexMagic = 0;
@@ -146,32 +129,37 @@ function navigateMagic(direction) {
   galleryContainer.style.transform = `translateX(${offset}%)`;
 }
 
-document.querySelector('.prev-button-magic').addEventListener('click', () => {
+document.querySelector('.magic-navigation__button--prev').addEventListener('click', () => {
   navigateMagic(-1);
 });
 
-document.querySelector('.next-button-magic').addEventListener('click', () => {
+document.querySelector('.magic-navigation__button--next').addEventListener('click', () => {
   navigateMagic(1);
 });
 
-let autoplayIntervalMagic = null;
 
-function startAutoplayMagic(interval) {
-  stopAutoplayMagic();
-  autoplayIntervalMagic = setInterval(() => {
-    navigateMagic(1);
-  }, interval);
+
+// qaizzo
+let currentIndexQaizzo = 0;
+
+function navigateQaizzo(direction) {
+  const galleryContainer = document.querySelector('.qaizzo-container');
+  const totalImages = document.querySelectorAll('.qaizzo-item').length;
+
+  currentIndexQaizzo = (currentIndexQaizzo + direction + totalImages) % totalImages;
+
+  const offset = -currentIndexQaizzo * 100;
+  galleryContainer.style.transform = `translateX(${offset}%)`;
 }
 
-function stopAutoplayMagic() {
-  clearInterval(autoplayIntervalMagic);
-}
-
-startAutoplayMagic(3000);
-
-document.querySelectorAll('.nav-button-magic').forEach(button => {
-  button.addEventListener('click', stopAutoplayMagic);
+document.querySelector('.qaizzo-navigation__button--prev').addEventListener('click', () => {
+  navigateQaizzo(-1);
 });
+
+document.querySelector('.qaizzo-navigation__button--next').addEventListener('click', () => {
+  navigateQaizzo(1);
+});
+
 
 
 
