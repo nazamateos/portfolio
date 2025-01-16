@@ -164,6 +164,54 @@ document.querySelector('.qaizzo-navigation__button--next').addEventListener('cli
 
 
 
+// BRANDING
+
+// lagama
+let currentIndexlagama = 0;
+
+function navigatelagama(direction) {
+  const galleryContainer = document.querySelector('.lagama-container');
+  const totalImages = document.querySelectorAll('.lagama-item').length;
+
+  currentIndexlagama = (currentIndexlagama + direction + totalImages) % totalImages;
+
+  const offset = -currentIndexlagama * 100;
+  galleryContainer.style.transform = `translateX(${offset}%)`;
+}
+
+document.querySelector('.lagama-navigation__button--prev').addEventListener('click', () => {
+  navigatelagama(-1);
+});
+
+document.querySelector('.lagama-navigation__button--next').addEventListener('click', () => {
+  navigatelagama(1);
+});
+
+// qaiso
+let currentIndexqaiso = 0;
+
+function navigateqaiso(direction) {
+  const galleryContainer = document.querySelector('.qaiso-container');
+  const totalImages = document.querySelectorAll('.qaiso-item').length;
+
+  currentIndexqaiso = (currentIndexqaiso + direction + totalImages) % totalImages;
+
+  const offset = -currentIndexqaiso * 100;
+  galleryContainer.style.transform = `translateX(${offset}%)`;
+}
+
+document.querySelector('.qaiso-navigation__button--prev').addEventListener('click', () => {
+  navigateqaiso(-1);
+});
+
+document.querySelector('.qaiso-navigation__button--next').addEventListener('click', () => {
+  navigateqaiso(1);
+});
+
+
+
+
+
 
 
 
