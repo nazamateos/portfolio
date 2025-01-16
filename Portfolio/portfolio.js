@@ -1,3 +1,16 @@
+// HEADER
+document.addEventListener("DOMContentLoaded", () => {
+  const toggleButton = document.querySelector(".header__toggle");
+  const nav = document.querySelector(".header__nav");
+
+  toggleButton.addEventListener("click", () => {
+    nav.classList.toggle("header__nav--active");
+  });
+});
+
+
+
+
 // ALERTA INTRO
 function handleButtonClick(response) {
   const alertContainer = document.getElementById('alert-container');
@@ -82,6 +95,20 @@ document.addEventListener("DOMContentLoaded", () => {
 // SOCIAL MEDIA
 let currentIndex = 0;
 
+// Función para navegar por las imágenes
+function navigate(direction) {
+  const galleryContainer = document.querySelector('.slider-container');
+  const totalImages = document.querySelectorAll('.slider-item').length;
+
+  // Ajustar el índice de la imagen actual
+  currentIndex = (currentIndex + direction + totalImages) % totalImages;
+
+  // Calcular el desplazamiento
+  const offset = -currentIndex * 100; // Cada slide ocupa el 100%
+  galleryContainer.style.transform = `translateX(${offset}%)`;
+}
+
+// Botones de navegación
 document.querySelector('.prev-button').addEventListener('click', () => {
   navigate(-1);
 });
@@ -90,16 +117,7 @@ document.querySelector('.next-button').addEventListener('click', () => {
   navigate(1);
 });
 
-function navigate(direction) {
-  const galleryContainer = document.querySelector('.emociones-container');
-  const totalImages = document.querySelectorAll('.emociones-item').length;
-
-  currentIndex = (currentIndex + direction + totalImages) % totalImages;
-  const offset = -currentIndex * 90;
-
-  galleryContainer.style.transform = `translateX(${offset}%)`;
-}
-
+// Autoplay
 let autoplayInterval = null;
 
 function startAutoplay(interval) {
@@ -113,12 +131,13 @@ function stopAutoplay() {
   clearInterval(autoplayInterval);
 }
 
-startAutoplay(3000);
+startAutoplay(3000); // Cambiar cada 3 segundos
 
-
+// Detener autoplay al hacer clic en un botón
 document.querySelectorAll('.nav-button').forEach(button => {
   button.addEventListener('click', stopAutoplay);
 });
+
 
 
 
