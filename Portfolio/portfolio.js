@@ -1,3 +1,4 @@
+
 // HEADER
 document.addEventListener("DOMContentLoaded", () => {
   const toggleButton = document.querySelector(".header__toggle");
@@ -113,30 +114,6 @@ document.querySelector('.emociones-navigation__button--prev').addEventListener('
 document.querySelector('.emociones-navigation__button--next').addEventListener('click', () => {
   navigateEmociones(1);
 });
-
-
-
-// magic
-let currentIndexMagic = 0;
-
-function navigateMagic(direction) {
-  const galleryContainer = document.querySelector('.magic-container');
-  const totalImages = document.querySelectorAll('.magic-item').length;
-
-  currentIndexMagic = (currentIndexMagic + direction + totalImages) % totalImages;
-
-  const offset = -currentIndexMagic * 100;
-  galleryContainer.style.transform = `translateX(${offset}%)`;
-}
-
-document.querySelector('.magic-navigation__button--prev').addEventListener('click', () => {
-  navigateMagic(-1);
-});
-
-document.querySelector('.magic-navigation__button--next').addEventListener('click', () => {
-  navigateMagic(1);
-});
-
 
 
 // qaizzo

@@ -1370,25 +1370,27 @@ body {
 }
 
 .emociones-navigation__button {
-  background-color: rgba(255, 255, 255, 0.866);
-  color: rgb(0, 0, 0);
+  background-color: #000000;
+  color: rgb(255, 255, 255);
   border: none;
-  padding: 10px 15px;
+  padding: 0px 10px;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .emociones-navigation__button:hover {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(93, 93, 93);
 }
 
 
 .emociones-navigation__button.emociones-navigation__button--prev {
-  margin-left: 10px;
+  font-size: xxx-large;
+  margin-left: 20px;
 }
 
 .emociones-navigation__button.emociones-navigation__button--next {
-  margin-right: 300px;
+  margin-right: 450px;
+  font-size: xxx-large;
 }
 
 /* media queries */
@@ -1449,15 +1451,13 @@ body {
   }
 
   .emociones-navigation {
-    gap: 1300px;
+    gap: 1400px;
     /* Espaciado amplio entre botones */
   }
 
   .emociones-navigation__button {
-    padding: 10px 15px;
-    /* Mantiene los botones grandes */
     font-size: 1rem;
-    /* Tamaño del texto original */
+    
   }
 }
 
@@ -1491,40 +1491,6 @@ body {
   margin: 0 auto;
 }
 
-.magic-navigation {
-  display: flex;
-  justify-content: space-between;
-  gap: 1300px;
-  align-items: center;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  transform: translateY(-50%);
-  z-index: 10;
-}
-
-.magic-navigation__button {
-  background-color: rgba(255, 255, 255, 0.866);
-  color: rgb(0, 0, 0);
-  border: none;
-  padding: 10px 15px;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.magic-navigation__button:hover {
-  background-color: rgb(255, 255, 255);
-}
-
-
-.magic-navigation__button.magic-navigation__button--prev {
-  margin-left: 10px;
-}
-
-.magic-navigation__button.magic-navigation__button--next {
-  margin-right: 300px;
-}
 
 /* media queries */
 /* Para pantallas pequeñas (móviles, menos de 768px) */
@@ -1755,25 +1721,34 @@ body {
 }
 
 .qaizzo-navigation__button {
-  background-color: rgba(255, 255, 255, 0.866);
-  color: rgb(0, 0, 0);
   border: none;
-  padding: 10px 15px;
+  padding: 0px 10px;
   cursor: pointer;
-  border-radius: 5px;
-}
-
-.qaizzo-navigation__button:hover {
-  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
 }
 
 
 .qaizzo-navigation__button.qaizzo-navigation__button--prev {
-  margin-left: 10px;
+  font-size: xxx-large;
+  margin-left: 20px;
+  background-color: #dbdbdb;
+  color:#000;
 }
-
+.qaizzo-navigation__button.qaizzo-navigation__button--prev:hover {
+  background-color: #a0a0a0;
+  color:#ffffff;
+  
+}
 .qaizzo-navigation__button.qaizzo-navigation__button--next {
   margin-right: 300px;
+  font-size: xxx-large;
+  background-color: #dbdbdb;
+  color:#000;
+}
+.qaizzo-navigation__button.qaizzo-navigation__button--next:hover {
+  background-color: #a0a0a0;
+  color:#ffffff;
+  
 }
 
 /* media queries */
@@ -1834,13 +1809,11 @@ body {
   }
 
   .qaizzo-navigation {
-    gap: 1300px;
+    gap: 1400px;
     /* Espaciado amplio entre los botones */
   }
 
   .qaizzo-navigation__button {
-    padding: 10px 15px;
-    /* Mantiene los botones grandes */
     font-size: 1rem;
     /* Tamaño del texto original */
   }
@@ -1917,7 +1890,6 @@ body {
   transition: transform 0.5s ease-in-out;
   width: 100%;
   height: 100%;
-  margin-left: 50px;
 }
 
 .lagama-item {
@@ -1927,11 +1899,11 @@ body {
 }
 
 .lagama-item img {
-  width: 100%;
+  width: 92%;
   height: 100%;
   object-fit: cover;
   display: block;
-  margin: 0 auto;
+
 }
 
 .lagama-navigation {
@@ -1948,25 +1920,30 @@ body {
 }
 
 .lagama-navigation__button {
-  background-color: rgba(255, 255, 255, 0.866);
-  color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.866);
+  color: rgb(255, 255, 255);
   border: none;
-  padding: 10px 15px;
+  padding: 0px 10px;
   cursor: pointer;
   border-radius: 5px;
 }
 
 .lagama-navigation__button:hover {
   background-color: rgb(255, 255, 255);
+  background-color: #dbdbdb;
+  color:#000;
 }
 
 
 .lagama-navigation__button.lagama-navigation__button--prev {
   margin-left: 10px;
+  font-size: xxx-large;
 }
 
 .lagama-navigation__button.lagama-navigation__button--next {
   margin-right: 300px;
+  font-size: xxx-large;
+  
 }
 
 /* qaiso */
@@ -1981,7 +1958,6 @@ body {
   transition: transform 0.5s ease-in-out;
   width: 100%;
   height: 100%;
-  margin-left: 50px;
 }
 
 .qaiso-item {
@@ -1991,14 +1967,42 @@ body {
 }
 
 .qaiso-item img {
-  width: 100%;
+  width: 92%;
   height: 100%;
   object-fit: cover;
   display: block;
-  margin: 0 auto;
 }
 
-.qaiso-navigation {
+
+
+/* aguadir */
+#aguadir {
+  width: 25%;
+  max-width: 2000px;
+  position: relative;
+}
+
+.aguadir-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+  height: 100%;
+}
+
+.aguadir-item {
+  flex: 0 0 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.aguadir-item img {
+  width: 92%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.aguadir-navigation {
   display: flex;
   justify-content: space-between;
   gap: 1300px;
@@ -2011,27 +2015,63 @@ body {
   z-index: 10;
 }
 
-.qaiso-navigation__button {
-  background-color: rgba(255, 255, 255, 0.866);
-  color: rgb(0, 0, 0);
+.aguadir-navigation__button {
+  background-color: rgba(0, 0, 0, 0.866);
+  color: rgb(255, 255, 255);
   border: none;
-  padding: 10px 15px;
+  padding: 0px 10px;
   cursor: pointer;
   border-radius: 5px;
 }
 
-.qaiso-navigation__button:hover {
+.aguadir-navigation__button:hover {
   background-color: rgb(255, 255, 255);
+  background-color: #dbdbdb;
+  color:#000;
 }
 
 
-.qaiso-navigation__button.qaiso-navigation__button--prev {
+.aguadir-navigation__button.aguadir-navigation__button--prev {
   margin-left: 10px;
+  font-size: xxx-large;
 }
 
-.qaiso-navigation__button.qaiso-navigation__button--next {
+.aguadir-navigation__button.aguadir-navigation__button--next {
   margin-right: 300px;
+  font-size: xxx-large;
+  
 }
+
+/* tridente */
+#tridente {
+  width: 25%;
+  max-width: 2000px;
+  position: relative;
+}
+
+.tridente-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+  height: 100%;
+}
+
+.tridente-item {
+  flex: 0 0 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.tridente-item img {
+  width: 92%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+
+
 
 
 
@@ -2159,7 +2199,6 @@ body {
 
 .modal__content {
   max-width: 90%;
-  max-height: 90%;
   text-align: center;
   background-color: white;
   padding: 20px;
