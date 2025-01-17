@@ -708,11 +708,11 @@ body {
 }
 
 
-/* Parallax Section */
+/* Parallax  */
 .parallax {
   position: relative;
-  height: 0px; /* Altura del contenedor parallax */
-  background-image: url('fotos/hormigon.jpg'); /* Cambia por la imagen que desees */
+  height: 200px; 
+  background-image: url('fotos/hormigon.jpg'); 
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -731,6 +731,45 @@ body {
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
 }
 
+/* Media Queries */
+
+/* Pantallas pequeñas (móviles, menos de 768px) */
+@media (max-width: 768px) {
+  .parallax {
+    height: 150px;
+    background-attachment: scroll; 
+  }
+
+  .parallax__content {
+    font-size: 1.5rem; 
+  }
+}
+
+/* Tablets (entre 768px y 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .parallax {
+    height: 180px;
+    background-attachment: fixed; 
+    background-size: cover; 
+  }
+
+  .parallax__content {
+    font-size: 1.8rem; 
+  }
+}
+
+/* Pantallas grandes (más de 1024px) */
+@media (min-width: 1025px) {
+  .parallax {
+    height: 300px; 
+    background-attachment: fixed;
+    background-size: cover; 
+  }
+
+  .parallax__content {
+    font-size: 2.5rem; 
+  }
+}
 
 
 
@@ -1073,56 +1112,38 @@ body {
 @media (max-width: 768px) {
   .titulo__servicios {
     margin-left: 1rem;
-    /* Reduce el margen izquierdo */
     font-size: 40px;
-    /* Reduce el tamaño del título */
     text-align: center;
-    /* Centra el texto */
   }
 
   .servicios {
     flex-direction: column;
-    /* Cambia a diseño vertical */
     align-items: center;
-    /* Centra el contenido */
     gap: 1.5rem;
-    /* Reduce el espacio entre elementos */
     padding: 1.5rem;
-    /* Ajusta el relleno */
   }
 
   .servicios__titulos {
     width: 100%;
-    /* Ocupa todo el ancho disponible */
     text-align: center;
-    /* Centra los títulos */
   }
 
   .servicios__titulo {
     font-size: 1.5rem;
-    /* Reduce el tamaño del texto */
     margin-left: 0;
-    /* Elimina el margen izquierdo */
     margin-bottom: 2rem;
-    /* Reduce el margen inferior */
   }
 
   .servicios__imagen {
     width: 100%;
-    /* Asegura que la imagen ocupe todo el ancho */
     justify-content: center;
-    /* Centra la imagen */
   }
 
   .servicios__imagen-content {
     max-width: 90%;
-    /* Ajusta el tamaño máximo de la imagen */
     max-height: 300px;
-    /* Reduce la altura máxima */
     margin-right: 0;
-    /* Elimina el margen derecho */
     border-radius: 10px;
-    /* Reduce el radio de las esquinas */
   }
 }
 
@@ -1130,56 +1151,38 @@ body {
 @media (min-width: 769px) and (max-width: 1024px) {
   .titulo__servicios {
     margin-left: 2rem;
-    /* Ajusta el margen izquierdo */
     font-size: 50px;
-    /* Reduce ligeramente el tamaño del título */
     text-align: center;
-    /* Centra el texto */
   }
 
   .servicios {
     flex-direction: column;
-    /* Cambia a diseño vertical */
     align-items: center;
-    /* Centra el contenido */
     gap: 2rem;
-    /* Mantén el espacio entre elementos */
     padding: 2rem;
-    /* Mantén el relleno */
   }
 
   .servicios__titulos {
     width: 100%;
-    /* Ocupa todo el ancho disponible */
     text-align: center;
-    /* Centra los títulos */
   }
 
   .servicios__titulo {
     font-size: 1.6rem;
-    /* Ajusta el tamaño del texto */
     margin-left: 0;
-    /* Elimina el margen izquierdo */
     margin-bottom: 3rem;
-    /* Ajusta el margen inferior */
   }
 
   .servicios__imagen {
     width: 100%;
-    /* Asegura que la imagen ocupe todo el ancho */
     justify-content: center;
-    /* Centra la imagen */
   }
 
   .servicios__imagen-content {
     max-width: 80%;
-    /* Ajusta el tamaño máximo de la imagen */
     max-height: 400px;
-    /* Ajusta la altura máxima */
     margin-right: 0;
-    /* Elimina el margen derecho */
     border-radius: 15px;
-    /* Mantén un radio de esquinas intermedio */
   }
 }
 
@@ -1187,54 +1190,37 @@ body {
 @media (min-width: 1025px) {
   .titulo__servicios {
     margin-left: 3rem;
-    /* Mantén el margen izquierdo original */
-    font-size: 60px;
-    /* Mantén el tamaño original */
+     font-size: 60px;
   }
 
   .servicios {
     flex-direction: row;
-    /* Mantén el diseño horizontal */
-    align-items: flex-start;
-    /* Mantén la alineación original */
+     align-items: flex-start;
     gap: 2rem;
-    /* Mantén el espacio original */
     padding: 2rem;
-    /* Mantén el relleno original */
   }
 
   .servicios__titulos {
     flex: 1;
-    /* Mantén el ancho original */
     text-align: left;
-    /* Mantén la alineación izquierda */
   }
 
   .servicios__titulo {
     font-size: 1.8rem;
-    /* Mantén el tamaño original */
     margin-left: 8rem;
-    /* Mantén el margen izquierdo original */
     margin-bottom: 5rem;
-    /* Mantén el margen inferior original */
   }
 
   .servicios__imagen {
     flex: 1;
-    /* Mantén el ancho original */
     justify-content: center;
-    /* Mantén la imagen centrada */
   }
 
   .servicios__imagen-content {
     max-width: 100%;
-    /* Mantén el tamaño máximo original */
     max-height: 500px;
-    /* Mantén la altura máxima original */
     margin-right: 150px;
-    /* Mantén el margen derecho original */
     border-radius: 20px;
-    /* Mantén el radio de las esquinas original */
   }
 }
 
@@ -1310,45 +1296,34 @@ body {
 @media (max-width: 768px) {
   .fotografia {
     text-align: center;
-    /* Centra el texto para pantallas pequeñas */
   }
 
   .fotografia__title {
     font-size: 40px;
-    /* Reduce el tamaño del título */
     padding: 0.8rem;
-    /* Ajusta el relleno */
   }
 
   .fotografia__subtitle,
   .fotografia__text {
     margin-left: 0;
-    /* Elimina el margen para centrar el contenido */
     font-size: 16px;
-    /* Ajusta el tamaño del texto */
   }
 
   .fotografia__grid {
     grid-template-columns: 1fr;
-    /* Cambia a una columna */
     gap: 1rem;
-    /* Mantén el espacio entre los elementos */
     justify-content: center;
-    /* Centra los elementos en el contenedor */
   }
 
   .fotografia__item:nth-child(2n) .fotografia__imagen,
   .fotografia__item:nth-child(3n) .fotografia__imagen {
     grid-row: auto;
-    /* Restablece el comportamiento para pantallas pequeñas */
     grid-column: auto;
   }
 
   .fotografia__imagen {
     width: 100%;
-    /* Asegura que las imágenes ocupen todo el ancho del contenedor */
     height: auto;
-    /* Ajusta la altura automáticamente */
   }
 }
 
@@ -1356,37 +1331,28 @@ body {
 @media (min-width: 769px) and (max-width: 1024px) {
   .fotografia {
     text-align: left;
-    /* Mantén la alineación original */
   }
 
   .fotografia__title {
     font-size: 50px;
-    /* Reduce ligeramente el tamaño del título */
     padding: 1rem;
-    /* Mantén el relleno */
   }
 
   .fotografia__subtitle,
   .fotografia__text {
     margin-left: 0.5rem;
-    /* Reduce el margen */
     font-size: 18px;
-    /* Ajusta el tamaño del texto */
   }
 
   .fotografia__grid {
     grid-template-columns: repeat(2, 1fr);
-    /* Cambia a dos columnas */
     gap: 1rem;
-    /* Espaciado entre los elementos */
     justify-content: center;
-    /* Centra el contenido */
   }
 
   .fotografia__item:nth-child(2n) .fotografia__imagen,
   .fotografia__item:nth-child(3n) .fotografia__imagen {
     grid-row: auto;
-    /* Restablece el comportamiento */
     grid-column: auto;
   }
 
@@ -1400,41 +1366,31 @@ body {
 @media (min-width: 1025px) {
   .fotografia {
     text-align: left;
-    /* Mantén el diseño original */
   }
 
   .fotografia__title {
     font-size: 60px;
-    /* Mantén el tamaño original */
     padding: 1rem;
-    /* Mantén el relleno original */
   }
 
   .fotografia__subtitle,
   .fotografia__text {
     margin-left: 1rem;
-    /* Mantén el margen original */
     font-size: 20px;
-    /* Ajusta ligeramente el tamaño del texto */
   }
 
   .fotografia__grid {
     grid-template-columns: repeat(4, 1fr);
-    /* Mantén las cuatro columnas */
     gap: 1rem;
-    /* Espaciado entre los elementos */
     justify-content: start;
-    /* Alinea el contenido a la izquierda */
   }
 
   .fotografia__item:nth-child(2n) .fotografia__imagen {
     grid-row: span 2;
-    /* Mantén la fila extendida */
   }
 
   .fotografia__item:nth-child(3n) .fotografia__imagen {
     grid-column: span 2;
-    /* Mantén la columna extendida */
   }
 }
 
@@ -1478,10 +1434,6 @@ body {
   overflow: hidden;
 }
 
-/* media queries */
-
-
-
 
 
 
@@ -1513,28 +1465,21 @@ body {
 @media (max-width: 768px) {
   .sm {
     text-align: center;
-    /* Cambia la alineación para pantallas pequeñas */
   }
 
   .sm__title {
     font-size: 40px;
-    /* Reduce el tamaño de la fuente */
     padding: 0.8rem;
-    /* Ajusta el relleno para pantallas más pequeñas */
   }
 
   .sm__subtitle {
     margin-left: 0;
-    /* Elimina el margen para centrar el contenido */
     font-size: 16px;
-    /* Ajusta el tamaño del subtítulo */
   }
 
   .sm__text {
     margin-left: 0;
-    /* Elimina el margen para centrar el texto */
     font-size: 14px;
-    /* Ajusta el tamaño del texto */
   }
 }
 
@@ -1542,28 +1487,21 @@ body {
 @media (min-width: 769px) and (max-width: 1024px) {
   .sm {
     text-align: left;
-    /* Mantén el diseño original */
   }
 
   .sm__title {
     font-size: 50px;
-    /* Reduce ligeramente el tamaño de la fuente */
     padding: 1rem;
-    /* Mantén el relleno */
   }
 
   .sm__subtitle {
     margin-left: 0.5rem;
-    /* Reduce el margen para adaptarse a pantallas medianas */
     font-size: 18px;
-    /* Ajusta el tamaño del subtítulo */
   }
 
   .sm__text {
     margin-left: 0.5rem;
-    /* Reduce el margen */
     font-size: 16px;
-    /* Ajusta el tamaño del texto */
   }
 }
 
@@ -1571,28 +1509,21 @@ body {
 @media (min-width: 1025px) {
   .sm {
     text-align: left;
-    /* Mantén el diseño original */
   }
 
   .sm__title {
     font-size: 60px;
-    /* Mantén el tamaño de la fuente original */
     padding: 1rem;
-    /* Mantén el relleno */
   }
 
   .sm__subtitle {
     margin-left: 1rem;
-    /* Mantén el margen original */
     font-size: 20px;
-    /* Mantén el tamaño original */
   }
 
   .sm__text {
     margin-left: 1rem;
-    /* Mantén el margen original */
     font-size: 18px;
-    /* Ajusta ligeramente el tamaño */
   }
 }
 
@@ -1666,24 +1597,19 @@ body {
 @media (max-width: 768px) {
   #emociones {
     width: 100%;
-    /* Ocupa todo el ancho de la pantalla */
     max-width: none;
-    /* Elimina la restricción de ancho máximo */
   }
 
   .emociones-container {
     flex-direction: column;
-    /* Si quieres cambiar la orientación */
   }
 
   .emociones-item img {
     object-fit: contain;
-    /* Asegura que las imágenes no se recorten */
   }
 
   .emociones-navigation {
     display: none;
-    /* Oculta toda la navegación en móviles */
   }
 }
 
@@ -1691,21 +1617,16 @@ body {
 @media (min-width: 769px) and (max-width: 1024px) {
   #emociones {
     width: 50%;
-    /* Ocupa la mitad del ancho */
     max-width: 100%;
-    /* Ajusta para adaptarse a tablets */
   }
 
   .emociones-navigation {
     gap: 100px;
-    /* Espaciado intermedio entre botones */
   }
 
   .emociones-navigation__button {
     padding: 10px 15px;
-    /* Botones intermedios */
     font-size: 1rem;
-    /* Tamaño del texto adecuado */
   }
 }
 
@@ -1713,14 +1634,11 @@ body {
 @media (min-width: 1025px) {
   #emociones {
     width: 25%;
-    /* Mantiene el ancho original */
     max-width: 2000px;
-    /* Limita el ancho máximo */
   }
 
   .emociones-navigation {
     gap: 1400px;
-    /* Espaciado amplio entre botones */
   }
 
   .emociones-navigation__button {
@@ -1765,42 +1683,30 @@ body {
 @media (max-width: 768px) {
   #magic {
     width: 88%;
-    /* Ocupa todo el ancho disponible */
     max-width: none;
-    /* Elimina la restricción del ancho máximo */
     margin-left: 0;
-    /* Asegura que no haya desplazamiento horizontal */
   }
 
   .magic-container {
     display: flex;
     flex-direction: column;
-    /* Cambia a disposición vertical */
     margin-left: 0;
-    /* Centra el contenedor en pantallas pequeñas */
   }
 
   .magic-item {
     flex: none;
-    /* Ajusta cada imagen para que no se reduzca */
     width: 90%;
-    /* Reduce ligeramente el ancho de las imágenes */
     margin-bottom: 20px;
-    /* Espaciado entre imágenes */
   }
 
   .magic-item img {
     object-fit: contain;
-    /* Evita recortes en las imágenes */
     width: 100%;
-    /* Mantén el ancho completo de cada imagen */
     height: auto;
-    /* Ajusta la altura automáticamente */
   }
 
   .magic-navigation {
     display: none;
-    /* Oculta toda la navegación en móviles */
   }
 }
 
@@ -1876,28 +1782,22 @@ body {
 @media (max-width: 768px) {
   #post {
     width: 100%;
-    /* Ocupa todo el ancho disponible */
     max-width: none;
-    /* Elimina la restricción de ancho máximo */
     margin-left: 0;
-    /* Centra el slider en pantallas pequeñas */
   }
 
   .post-container {
     margin-left: 0;
-    /* Centra el contenedor */
     display: flex;
     flex-direction: column;
   }
 
   .post-item img {
     object-fit: contain;
-    /* Asegura que las imágenes no se recorten */
   }
 
   .post-navigation {
     display: none;
-    /* Oculta toda la navegación en móviles */
   }
 }
 
@@ -1905,21 +1805,16 @@ body {
 @media (min-width: 769px) and (max-width: 1024px) {
   #post {
     width: 50%;
-    /* Ocupa la mitad del ancho */
     max-width: 100%;
-    /* Ajusta para adaptarse a tablets */
   }
 
   .post-navigation {
     gap: 100px;
-    /* Espaciado intermedio entre los botones */
   }
 
   .post-navigation__button {
     padding: 10px 15px;
-    /* Tamaño intermedio para botones */
     font-size: 1rem;
-    /* Ajusta el tamaño del texto */
   }
 }
 
@@ -1927,21 +1822,16 @@ body {
 @media (min-width: 1025px) {
   #post {
     width: 25%;
-    /* Mantiene el ancho original */
     max-width: 2000px;
-    /* Conserva la restricción del ancho máximo */
   }
 
   .post-navigation {
     gap: 1300px;
-    /* Espaciado amplio entre los botones */
   }
 
   .post-navigation__button {
     padding: 10px 15px;
-    /* Mantiene los botones grandes */
     font-size: 1rem;
-    /* Tamaño del texto original */
   }
 }
 
@@ -2027,24 +1917,19 @@ body {
 @media (max-width: 768px) {
   #qaizzo {
     width: 100%;
-    /* Ocupa todo el ancho disponible */
     max-width: none;
-    /* Elimina la restricción de ancho máximo */
   }
 
   .qaizzo-container {
     flex-direction: column;
-    /* Asegura la orientación si es necesario */
   }
 
   .qaizzo-item img {
     object-fit: contain;
-    /* Asegura que las imágenes no se recorten */
   }
 
   .qaizzo-navigation {
     display: none;
-    /* Oculta toda la navegación en móviles */
   }
 }
 
@@ -2052,21 +1937,16 @@ body {
 @media (min-width: 769px) and (max-width: 1024px) {
   #qaizzo {
     width: 50%;
-    /* Ocupa la mitad del ancho */
     max-width: 100%;
-    /* Ajusta para adaptarse a tablets */
   }
 
   .qaizzo-navigation {
     gap: 100px;
-    /* Espaciado intermedio entre los botones */
   }
 
   .qaizzo-navigation__button {
     padding: 10px 15px;
-    /* Tamaño intermedio para botones */
     font-size: 1rem;
-    /* Ajusta el tamaño del texto */
   }
 }
 
@@ -2074,19 +1954,15 @@ body {
 @media (min-width: 1025px) {
   #qaizzo {
     width: 25%;
-    /* Mantiene el ancho original */
     max-width: 2000px;
-    /* Conserva la restricción del ancho máximo */
   }
 
   .qaizzo-navigation {
     gap: 1400px;
-    /* Espaciado amplio entre los botones */
   }
 
   .qaizzo-navigation__button {
     font-size: 1rem;
-    /* Tamaño del texto original */
   }
 }
 
@@ -2152,85 +2028,85 @@ body {
 /* Para pantallas pequeñas (móviles, menos de 768px) */
 @media (max-width: 768px) {
   .brand__title {
-    font-size: 40px; /* Reduce el tamaño de la fuente */
-    padding: 0.5rem; /* Reduce el padding */
+    font-size: 40px; 
+    padding: 0.5rem; 
   }
 
   .brand__subtitle,
   .brand__text {
-    margin-left: 0.5rem; /* Reduce el margen izquierdo */
+    margin-left: 0.5rem; 
   }
 
   .branding {
-    margin: 1rem; /* Reduce el margen */
-    padding: 0.5rem; /* Reduce el padding */
+    margin: 1rem; 
+    padding: 0.5rem; 
   }
 
   .branding__title {
-    font-size: 1.5rem; /* Reduce el tamaño de la fuente */
+    font-size: 1.5rem; 
   }
 
   .branding__list {
-    gap: 0.5rem; /* Ajusta el espacio entre elementos de la lista */
+    gap: 0.5rem; 
   }
 
   .branding__item {
-    font-size: 1rem; /* Reduce el tamaño de la fuente */
-    padding: 0.3rem 0; /* Reduce el padding */
+    font-size: 1rem; 
+    padding: 0.3rem 0; 
   }
 }
 
 /* Para tablets (entre 768px y 1024px) */
 @media (min-width: 769px) and (max-width: 1024px) {
   .brand__title {
-    font-size: 50px; /* Ajusta el tamaño de la fuente */
+    font-size: 50px; 
     padding: 1rem;
   }
 
   .brand__subtitle,
   .brand__text {
-    margin-left: 0.8rem; /* Ajusta el margen izquierdo */
+    margin-left: 0.8rem; 
   }
 
   .branding {
-    margin: 1.5rem; /* Ajusta el margen */
-    padding: 1rem; /* Mantén el padding */
+    margin: 1.5rem; 
+    padding: 1rem; 
   }
 
   .branding__title {
-    font-size: 1.8rem; /* Ajusta el tamaño de la fuente */
+    font-size: 1.8rem; 
   }
 
   .branding__item {
-    font-size: 1.1rem; /* Ajusta el tamaño de la fuente */
-    padding: 0.4rem 0; /* Ajusta el padding */
+    font-size: 1.1rem; 
+    padding: 0.4rem 0; 
   }
 }
 
 /* Para pantallas grandes (más de 1024px) */
 @media (min-width: 1025px) {
   .brand__title {
-    font-size: 60px; /* Mantiene el tamaño original */
+    font-size: 60px; 
     padding: 1rem;
   }
 
   .brand__subtitle,
   .brand__text {
-    margin-left: 1rem; /* Mantiene el margen izquierdo */
+    margin-left: 1rem; 
   }
 
   .branding {
-    margin: 2rem; /* Mantiene el margen */
-    padding: 1rem; /* Mantiene el padding */
+    margin: 2rem; 
+    padding: 1rem; 
   }
 
   .branding__title {
-    font-size: 2rem; /* Mantiene el tamaño original */
+    font-size: 2rem; 
   }
 
   .branding__item {
-    font-size: 1.2rem; /* Mantiene el tamaño original */
-    padding: 0.5rem 0; /* Mantiene el padding original */
+    font-size: 1.2rem; 
+    padding: 0.5rem 0; 
   }
 }
 
@@ -2242,19 +2118,18 @@ body {
   border: none;
   font-size: 2rem;
   cursor: pointer;
-  z-index: 15; /* Asegura que esté encima del menú */
+  z-index: 15; 
 }
 
 @media (min-width: 768px) {
-  /* En pantallas grandes, el menú siempre es visible */
   .header__nav {
-    display: flex; /* Muestra el menú */
-    position: static; /* No debe ser absoluto */
-    flex-direction: row; /* Alinea horizontalmente */
+    display: flex; 
+    position: static;
+    flex-direction: row; 
   }
 
   .header__toggle {
-    display: none; /* Oculta el botón toggle */
+    display: none; 
   }
 }
 
@@ -2337,24 +2212,19 @@ body {
 @media (max-width: 768px) {
   #lagama {
     width: 100%;
-    /* Ocupa todo el ancho de la pantalla */
     max-width: none;
-    /* Elimina la restricción de ancho máximo */
   }
 
   .lagama-container {
     flex-direction: column;
-    /* Si quieres cambiar la orientación */
   }
 
   .lagama-item img {
     object-fit: contain;
-    /* Asegura que las imágenes no se recorten */
   }
 
   .lagama-navigation {
     display: none;
-    /* Oculta toda la navegación en móviles */
   }
 }
 
@@ -2362,21 +2232,16 @@ body {
 @media (min-width: 769px) and (max-width: 1024px) {
   #lagama {
     width: 50%;
-    /* Ocupa la mitad del ancho */
     max-width: 100%;
-    /* Ajusta para adaptarse a tablets */
   }
 
   .lagama-navigation {
     gap: 100px;
-    /* Espaciado intermedio entre botones */
   }
 
   .lagama-navigation__button {
     padding: 10px 15px;
-    /* Botones intermedios */
     font-size: 1rem;
-    /* Tamaño del texto adecuado */
   }
 }
 
@@ -2384,14 +2249,11 @@ body {
 @media (min-width: 1025px) {
   #lagama {
     width: 25%;
-    /* Mantiene el ancho original */
     max-width: 2000px;
-    /* Limita el ancho máximo */
   }
 
   .lagama-navigation {
     gap: 1400px;
-    /* Espaciado amplio entre botones */
   }
 
   .lagama-navigation__button {
@@ -2449,11 +2311,8 @@ body {
 
   .qaiso-item {
     flex: none;
-    /* Ajusta cada imagen para que no se reduzca */
     width: 90%;
-    /* Reduce ligeramente el ancho de las imágenes */
     margin-bottom: 20px;
-    /* Espaciado entre imágenes */
   }
 
   .qaiso-item img {
