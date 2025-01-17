@@ -711,8 +711,8 @@ body {
 /* Parallax Section */
 .parallax {
   position: relative;
-  height: 400px; /* Altura del contenedor parallax */
-  background-image: url('fotos/linkedin.png'); /* Cambia por la imagen que desees */
+  height: 0px; /* Altura del contenedor parallax */
+  background-image: url('fotos/hormigon.jpg'); /* Cambia por la imagen que desees */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
