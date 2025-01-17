@@ -2317,16 +2317,12 @@ body {
 
   .qaiso-item img {
     object-fit: contain;
-    /* Evita recortes en las imágenes */
     width: 100%;
-    /* Mantén el ancho completo de cada imagen */
     height: auto;
-    /* Ajusta la altura automáticamente */
   }
 
   .qaiso-navigation {
     display: none;
-    /* Oculta toda la navegación en móviles */
   }
 }
 
@@ -2405,24 +2401,19 @@ body {
 @media (max-width: 768px) {
   #aguadir {
     width: 100%;
-    /* Ocupa todo el ancho de la pantalla */
     max-width: none;
-    /* Elimina la restricción de ancho máximo */
   }
 
   .aguadir-container {
     flex-direction: column;
-    /* Si quieres cambiar la orientación */
   }
 
   .aguadir-item img {
     object-fit: contain;
-    /* Asegura que las imágenes no se recorten */
   }
 
   .aguadir-navigation {
     display: none;
-    /* Oculta toda la navegación en móviles */
   }
 }
 
@@ -2430,21 +2421,17 @@ body {
 @media (min-width: 769px) and (max-width: 1024px) {
   #aguadir {
     width: 50%;
-    /* Ocupa la mitad del ancho */
     max-width: 100%;
-    /* Ajusta para adaptarse a tablets */
   }
 
   .aguadir-navigation {
     gap: 100px;
-    /* Espaciado intermedio entre botones */
+
   }
 
   .aguadir-navigation__button {
     padding: 10px 15px;
-    /* Botones intermedios */
     font-size: 1rem;
-    /* Tamaño del texto adecuado */
   }
 }
 
@@ -2452,14 +2439,11 @@ body {
 @media (min-width: 1025px) {
   #aguadir {
     width: 25%;
-    /* Mantiene el ancho original */
     max-width: 2000px;
-    /* Limita el ancho máximo */
   }
 
   .aguadir-navigation {
     gap: 1400px;
-    /* Espaciado amplio entre botones */
   }
 
   .aguadir-navigation__button {
@@ -2518,25 +2502,18 @@ body {
 
   .tridente-item {
     flex: none;
-    /* Ajusta cada imagen para que no se reduzca */
     width: 90%;
-    /* Reduce ligeramente el ancho de las imágenes */
     margin-bottom: 20px;
-    /* Espaciado entre imágenes */
   }
 
   .tridente-item img {
     object-fit: contain;
-    /* Evita recortes en las imágenes */
     width: 100%;
-    /* Mantén el ancho completo de cada imagen */
     height: auto;
-    /* Ajusta la altura automáticamente */
   }
 
   .tridente-navigation {
     display: none;
-    /* Oculta toda la navegación en móviles */
   }
 }
 
@@ -2721,47 +2698,34 @@ body {
 @media (max-width: 768px) {
   .work {
     padding: 20px;
-    /* Reduce el espacio de padding */
     text-align: center;
-    /* Mantén el texto centrado */
   }
 
   .work__gallery {
     flex-direction: column;
-    /* Mantén las imágenes en columna */
     gap: 10px;
-    /* Agrega un pequeño espaciado entre elementos */
   }
 
   .work__item {
     flex-direction: column;
-    /* Cambia a orientación vertical */
     align-items: center;
-    /* Centra los elementos */
     width: 100%;
-    /* Asegura que ocupe todo el ancho */
     max-width: 100%;
-    /* Elimina el límite de ancho */
   }
 
   .work__image {
     max-width: 100%;
-    /* Ocupa todo el ancho del contenedor */
     border-radius: 5px;
-    /* Reduce ligeramente el radio de las esquinas */
     margin-bottom: 65px;
   }
 
   .modal__image {
     max-height: 60vh;
-    /* Ajusta la altura máxima de la imagen */
   }
 
   .modal__close-button {
     padding: 10px 15px;
-    /* Botón más compacto */
     font-size: 14px;
-    /* Reduce el tamaño de la fuente */
   }
 }
 
@@ -2769,38 +2733,29 @@ body {
 @media (min-width: 769px) and (max-width: 1024px) {
   .work {
     padding: 30px;
-    /* Espaciado intermedio */
   }
 
   .work__gallery {
     flex-direction: column;
-    /* Mantén la orientación en columna */
     gap: 20px;
-    /* Espaciado adecuado entre elementos */
   }
 
   .work__item {
     width: 100%;
-    /* Ocupa todo el ancho disponible */
     max-width: 600px;
-    /* Limita el tamaño máximo */
   }
 
   .work__image {
     max-width: 100%;
-    /* Ajusta el ancho de las imágenes */
   }
 
   .modal__image {
     max-height: 70vh;
-    /* Ajusta la altura para tablets */
   }
 
   .modal__close-button {
     padding: 12px 18px;
-    /* Botón ligeramente más grande que en móviles */
     font-size: 15px;
-    /* Tamaño de texto ajustado */
   }
 }
 
@@ -2808,34 +2763,26 @@ body {
 @media (min-width: 1025px) {
   .work {
     padding: 40px;
-    /* Mantén el espaciado original */
   }
 
   .work__gallery {
     flex-direction: column;
-    /* Mantén el diseño en columna */
     gap: 30px;
-    /* Espaciado amplio entre elementos */
   }
 
   .work__item {
     width: 100%;
-    /* Ocupa todo el ancho disponible */
     max-width: 900px;
-    /* Mantén el límite original */
   }
 
 
   .modal__image {
     max-height: 80vh;
-    /* Altura máxima cómoda para pantallas grandes */
   }
 
   .modal__close-button {
     padding: 15px 20px;
-    /* Mantén el tamaño original */
     font-size: 16px;
-    /* Mantén el tamaño del texto original */
   }
 }
 
@@ -2935,42 +2882,31 @@ body {
 @media (max-width: 768px) {
   .formulario__h1 {
     font-size: 50px;
-    /* Reduce el tamaño del título */
     margin-left: 0;
-    /* Centra el título eliminando el margen */
     text-align: center;
-    /* Centra el texto */
   }
 
   .contact {
     padding: 1.5rem;
-    /* Reduce el espacio de padding */
   }
 
   .contact__form {
     width: 100%;
-    /* Asegura que el formulario ocupe todo el ancho */
     max-width: 100%;
-    /* Elimina el límite de ancho */
     gap: 1rem;
-    /* Reduce el espacio entre elementos */
   }
 
   .contact__group {
     gap: 0.3rem;
-    /* Ajusta el espaciado entre etiquetas e inputs */
   }
 
   .contact__textarea {
     height: 80px;
-    /* Reduce la altura del textarea */
   }
 
   .contact__button {
     font-size: 0.9rem;
-    /* Botón ligeramente más pequeño */
     padding: 0.6rem 1rem;
-    /* Ajusta el relleno del botón */
   }
 }
 
@@ -2978,33 +2914,25 @@ body {
 @media (min-width: 769px) and (max-width: 1024px) {
   .formulario__h1 {
     font-size: 70px;
-    /* Reduce ligeramente el tamaño del título */
     margin-left: 15px;
-    /* Reduce el margen izquierdo */
   }
 
   .contact {
     padding: 2rem;
-    /* Mantén el espacio de padding original */
   }
 
   .contact__form {
     max-width: 80%;
-    /* Ajusta el ancho del formulario */
     gap: 1.2rem;
-    /* Reduce un poco el espacio entre elementos */
   }
 
   .contact__textarea {
     height: 90px;
-    /* Ajusta ligeramente la altura del textarea */
   }
 
   .contact__button {
     font-size: 1rem;
-    /* Mantén el tamaño del texto del botón */
     padding: 0.7rem 1.3rem;
-    /* Ajusta el relleno */
   }
 }
 
@@ -3012,33 +2940,25 @@ body {
 @media (min-width: 1025px) {
   .formulario__h1 {
     font-size: 90px;
-    /* Mantén el tamaño original */
     margin-left: 30px;
-    /* Mantén el margen izquierdo original */
   }
 
   .contact {
     padding: 2rem;
-    /* Mantén el espacio de padding original */
   }
 
   .contact__form {
     max-width: 600px;
-    /* Mantén el límite de ancho original */
     gap: 1.5rem;
-    /* Mantén el espaciado original */
   }
 
   .contact__textarea {
     height: 100px;
-    /* Mantén la altura original */
   }
 
   .contact__button {
     font-size: 1rem;
-    /* Mantén el tamaño del texto original */
     padding: 0.8rem 1.5rem;
-    /* Mantén el relleno original */
   }
 }
 
@@ -3148,65 +3068,48 @@ body {
 @media (max-width: 768px) {
   .footer {
     padding: 1.5rem 1rem;
-    /* Reduce el padding */
     text-align: center;
-    /* Mantén el texto centrado */
   }
 
   .footer__contenido {
     max-width: 100%;
-    /* Asegura que ocupe todo el ancho */
   }
 
   .footer__title {
     font-size: 35px;
-    /* Reduce el tamaño del título */
     margin-bottom: 0.5rem;
-    /* Ajusta el margen */
   }
 
   .footer__text,
   .footer__intro {
     font-size: 0.9rem;
-    /* Reduce el tamaño del texto */
     margin-bottom: 1rem;
-    /* Aumenta el espaciado entre elementos */
   }
 
   .footer__contacto {
     flex-direction: column;
-    /* Cambia a orientación vertical */
     gap: 1rem;
-    /* Reduce el espacio entre enlaces */
     margin-right: 0;
-    /* Elimina el margen derecho */
   }
 
   .footer__socials {
     gap: 1rem;
-    /* Reduce el espacio entre iconos */
     margin-bottom: 1rem;
-    /* Ajusta el margen inferior */
   }
 
   .footer__social {
     width: 30px;
-    /* Iconos más pequeños */
     height: 30px;
   }
 
   .footer__bottom {
     font-size: 0.8rem;
-    /* Reduce el tamaño del texto */
     text-align: center;
-    /* Centra el texto */
   }
 
   .footer__copyright {
     text-align: center;
-    /* Centra el texto */
     margin-top: 1rem;
-    /* Agrega margen superior */
   }
 }
 
@@ -3214,49 +3117,40 @@ body {
 @media (min-width: 769px) and (max-width: 1024px) {
   .footer {
     padding: 2rem;
-    /* Mantén un buen espacio */
   }
 
   .footer__contenido {
     max-width: 90%;
-    /* Ajusta el ancho del contenido */
   }
 
   .footer__title {
     font-size: 45px;
-    /* Reduce ligeramente el tamaño del título */
   }
 
   .footer__text,
   .footer__intro {
     font-size: 1rem;
-    /* Mantén el tamaño adecuado */
   }
 
   .footer__contacto {
     gap: 1.5rem;
-    /* Ajusta el espacio entre enlaces */
   }
 
   .footer__socials {
     gap: 1.2rem;
-    /* Ajusta el espacio entre iconos */
   }
 
   .footer__social {
     width: 35px;
-    /* Iconos ligeramente más pequeños */
     height: 35px;
   }
 
   .footer__bottom {
     font-size: 0.85rem;
-    /* Ajusta el tamaño del texto */
   }
 
   .footer__copyright {
     text-align: right;
-    /* Mantén el texto alineado a la derecha */
   }
 }
 
@@ -3264,50 +3158,43 @@ body {
 @media (min-width: 1025px) {
   .footer {
     padding: 2rem 1rem;
-    /* Mantén el espaciado original */
   }
 
   .footer__contenido {
     max-width: 800px;
-    /* Mantén el ancho original */
   }
 
   .footer__title {
     font-size: 50px;
-    /* Mantén el tamaño original */
   }
 
   .footer__text,
   .footer__intro {
     font-size: 1rem;
-    /* Mantén el tamaño original */
+
   }
 
   .footer__contacto {
     flex-direction: row;
-    /* Mantén la orientación horizontal */
     gap: 2rem;
-    /* Mantén el espacio entre enlaces */
   }
 
   .footer__socials {
     gap: 1.5rem;
-    /* Mantén el espaciado entre iconos */
   }
 
   .footer__social {
     width: 40px;
-    /* Iconos en su tamaño original */
     height: 40px;
   }
 
   .footer__bottom {
     font-size: 0.875rem;
-    /* Mantén el tamaño original */
+  
   }
 
   .footer__copyright {
     text-align: right;
-    /* Mantén el texto alineado a la derecha */
+
   }
 }
