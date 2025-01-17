@@ -23,7 +23,7 @@ body {
   padding: 1rem 2rem;
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 1000;
 }
 
 .header__container {
@@ -857,116 +857,169 @@ body {
 /* Para pantallas pequeñas (móviles, menos de 768px) */
 @media (max-width: 768px) {
   .titulo__servicios {
-    margin-left: 1rem; /* Reduce el margen izquierdo */
-    font-size: 40px; /* Reduce el tamaño del título */
-    text-align: center; /* Centra el texto */
+    margin-left: 1rem;
+    /* Reduce el margen izquierdo */
+    font-size: 40px;
+    /* Reduce el tamaño del título */
+    text-align: center;
+    /* Centra el texto */
   }
 
   .servicios {
-    flex-direction: column; /* Cambia a diseño vertical */
-    align-items: center; /* Centra el contenido */
-    gap: 1.5rem; /* Reduce el espacio entre elementos */
-    padding: 1.5rem; /* Ajusta el relleno */
+    flex-direction: column;
+    /* Cambia a diseño vertical */
+    align-items: center;
+    /* Centra el contenido */
+    gap: 1.5rem;
+    /* Reduce el espacio entre elementos */
+    padding: 1.5rem;
+    /* Ajusta el relleno */
   }
 
   .servicios__titulos {
-    width: 100%; /* Ocupa todo el ancho disponible */
-    text-align: center; /* Centra los títulos */
+    width: 100%;
+    /* Ocupa todo el ancho disponible */
+    text-align: center;
+    /* Centra los títulos */
   }
 
   .servicios__titulo {
-    font-size: 1.5rem; /* Reduce el tamaño del texto */
-    margin-left: 0; /* Elimina el margen izquierdo */
-    margin-bottom: 2rem; /* Reduce el margen inferior */
+    font-size: 1.5rem;
+    /* Reduce el tamaño del texto */
+    margin-left: 0;
+    /* Elimina el margen izquierdo */
+    margin-bottom: 2rem;
+    /* Reduce el margen inferior */
   }
 
   .servicios__imagen {
-    width: 100%; /* Asegura que la imagen ocupe todo el ancho */
-    justify-content: center; /* Centra la imagen */
+    width: 100%;
+    /* Asegura que la imagen ocupe todo el ancho */
+    justify-content: center;
+    /* Centra la imagen */
   }
 
   .servicios__imagen-content {
-    max-width: 90%; /* Ajusta el tamaño máximo de la imagen */
-    max-height: 300px; /* Reduce la altura máxima */
-    margin-right: 0; /* Elimina el margen derecho */
-    border-radius: 10px; /* Reduce el radio de las esquinas */
+    max-width: 90%;
+    /* Ajusta el tamaño máximo de la imagen */
+    max-height: 300px;
+    /* Reduce la altura máxima */
+    margin-right: 0;
+    /* Elimina el margen derecho */
+    border-radius: 10px;
+    /* Reduce el radio de las esquinas */
   }
 }
 
 /* Para tablets (entre 768px y 1024px) */
 @media (min-width: 769px) and (max-width: 1024px) {
   .titulo__servicios {
-    margin-left: 2rem; /* Ajusta el margen izquierdo */
-    font-size: 50px; /* Reduce ligeramente el tamaño del título */
-    text-align: center; /* Centra el texto */
+    margin-left: 2rem;
+    /* Ajusta el margen izquierdo */
+    font-size: 50px;
+    /* Reduce ligeramente el tamaño del título */
+    text-align: center;
+    /* Centra el texto */
   }
 
   .servicios {
-    flex-direction: column; /* Cambia a diseño vertical */
-    align-items: center; /* Centra el contenido */
-    gap: 2rem; /* Mantén el espacio entre elementos */
-    padding: 2rem; /* Mantén el relleno */
+    flex-direction: column;
+    /* Cambia a diseño vertical */
+    align-items: center;
+    /* Centra el contenido */
+    gap: 2rem;
+    /* Mantén el espacio entre elementos */
+    padding: 2rem;
+    /* Mantén el relleno */
   }
 
   .servicios__titulos {
-    width: 100%; /* Ocupa todo el ancho disponible */
-    text-align: center; /* Centra los títulos */
+    width: 100%;
+    /* Ocupa todo el ancho disponible */
+    text-align: center;
+    /* Centra los títulos */
   }
 
   .servicios__titulo {
-    font-size: 1.6rem; /* Ajusta el tamaño del texto */
-    margin-left: 0; /* Elimina el margen izquierdo */
-    margin-bottom: 3rem; /* Ajusta el margen inferior */
+    font-size: 1.6rem;
+    /* Ajusta el tamaño del texto */
+    margin-left: 0;
+    /* Elimina el margen izquierdo */
+    margin-bottom: 3rem;
+    /* Ajusta el margen inferior */
   }
 
   .servicios__imagen {
-    width: 100%; /* Asegura que la imagen ocupe todo el ancho */
-    justify-content: center; /* Centra la imagen */
+    width: 100%;
+    /* Asegura que la imagen ocupe todo el ancho */
+    justify-content: center;
+    /* Centra la imagen */
   }
 
   .servicios__imagen-content {
-    max-width: 80%; /* Ajusta el tamaño máximo de la imagen */
-    max-height: 400px; /* Ajusta la altura máxima */
-    margin-right: 0; /* Elimina el margen derecho */
-    border-radius: 15px; /* Mantén un radio de esquinas intermedio */
+    max-width: 80%;
+    /* Ajusta el tamaño máximo de la imagen */
+    max-height: 400px;
+    /* Ajusta la altura máxima */
+    margin-right: 0;
+    /* Elimina el margen derecho */
+    border-radius: 15px;
+    /* Mantén un radio de esquinas intermedio */
   }
 }
 
 /* Para pantallas grandes (más de 1024px) */
 @media (min-width: 1025px) {
   .titulo__servicios {
-    margin-left: 3rem; /* Mantén el margen izquierdo original */
-    font-size: 60px; /* Mantén el tamaño original */
+    margin-left: 3rem;
+    /* Mantén el margen izquierdo original */
+    font-size: 60px;
+    /* Mantén el tamaño original */
   }
 
   .servicios {
-    flex-direction: row; /* Mantén el diseño horizontal */
-    align-items: flex-start; /* Mantén la alineación original */
-    gap: 2rem; /* Mantén el espacio original */
-    padding: 2rem; /* Mantén el relleno original */
+    flex-direction: row;
+    /* Mantén el diseño horizontal */
+    align-items: flex-start;
+    /* Mantén la alineación original */
+    gap: 2rem;
+    /* Mantén el espacio original */
+    padding: 2rem;
+    /* Mantén el relleno original */
   }
 
   .servicios__titulos {
-    flex: 1; /* Mantén el ancho original */
-    text-align: left; /* Mantén la alineación izquierda */
+    flex: 1;
+    /* Mantén el ancho original */
+    text-align: left;
+    /* Mantén la alineación izquierda */
   }
 
   .servicios__titulo {
-    font-size: 1.8rem; /* Mantén el tamaño original */
-    margin-left: 8rem; /* Mantén el margen izquierdo original */
-    margin-bottom: 5rem; /* Mantén el margen inferior original */
+    font-size: 1.8rem;
+    /* Mantén el tamaño original */
+    margin-left: 8rem;
+    /* Mantén el margen izquierdo original */
+    margin-bottom: 5rem;
+    /* Mantén el margen inferior original */
   }
 
   .servicios__imagen {
-    flex: 1; /* Mantén el ancho original */
-    justify-content: center; /* Mantén la imagen centrada */
+    flex: 1;
+    /* Mantén el ancho original */
+    justify-content: center;
+    /* Mantén la imagen centrada */
   }
 
   .servicios__imagen-content {
-    max-width: 100%; /* Mantén el tamaño máximo original */
-    max-height: 500px; /* Mantén la altura máxima original */
-    margin-right: 150px; /* Mantén el margen derecho original */
-    border-radius: 20px; /* Mantén el radio de las esquinas original */
+    max-width: 100%;
+    /* Mantén el tamaño máximo original */
+    max-height: 500px;
+    /* Mantén la altura máxima original */
+    margin-right: 150px;
+    /* Mantén el margen derecho original */
+    border-radius: 20px;
+    /* Mantén el radio de las esquinas original */
   }
 }
 
@@ -1457,7 +1510,7 @@ body {
 
   .emociones-navigation__button {
     font-size: 1rem;
-    
+
   }
 }
 
@@ -1732,23 +1785,26 @@ body {
   font-size: xxx-large;
   margin-left: 20px;
   background-color: #dbdbdb;
-  color:#000;
+  color: #000;
 }
+
 .qaizzo-navigation__button.qaizzo-navigation__button--prev:hover {
   background-color: #a0a0a0;
-  color:#ffffff;
-  
+  color: #ffffff;
+
 }
+
 .qaizzo-navigation__button.qaizzo-navigation__button--next {
   margin-right: 300px;
   font-size: xxx-large;
   background-color: #dbdbdb;
-  color:#000;
+  color: #000;
 }
+
 .qaizzo-navigation__button.qaizzo-navigation__button--next:hover {
   background-color: #a0a0a0;
-  color:#ffffff;
-  
+  color: #ffffff;
+
 }
 
 /* media queries */
@@ -1877,6 +1933,97 @@ body {
 .branding__item:last-child {
   border-bottom: none;
 }
+/* media queries  */
+/* Para pantallas pequeñas (móviles, menos de 768px) */
+@media (max-width: 768px) {
+  .brand__title {
+    font-size: 40px; /* Reduce el tamaño de la fuente */
+    padding: 0.5rem; /* Reduce el padding */
+  }
+
+  .brand__subtitle,
+  .brand__text {
+    margin-left: 0.5rem; /* Reduce el margen izquierdo */
+  }
+
+  .branding {
+    margin: 1rem; /* Reduce el margen */
+    padding: 0.5rem; /* Reduce el padding */
+  }
+
+  .branding__title {
+    font-size: 1.5rem; /* Reduce el tamaño de la fuente */
+  }
+
+  .branding__list {
+    gap: 0.5rem; /* Ajusta el espacio entre elementos de la lista */
+  }
+
+  .branding__item {
+    font-size: 1rem; /* Reduce el tamaño de la fuente */
+    padding: 0.3rem 0; /* Reduce el padding */
+  }
+}
+
+/* Para tablets (entre 768px y 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .brand__title {
+    font-size: 50px; /* Ajusta el tamaño de la fuente */
+    padding: 1rem;
+  }
+
+  .brand__subtitle,
+  .brand__text {
+    margin-left: 0.8rem; /* Ajusta el margen izquierdo */
+  }
+
+  .branding {
+    margin: 1.5rem; /* Ajusta el margen */
+    padding: 1rem; /* Mantén el padding */
+  }
+
+  .branding__title {
+    font-size: 1.8rem; /* Ajusta el tamaño de la fuente */
+  }
+
+  .branding__item {
+    font-size: 1.1rem; /* Ajusta el tamaño de la fuente */
+    padding: 0.4rem 0; /* Ajusta el padding */
+  }
+}
+
+/* Para pantallas grandes (más de 1024px) */
+@media (min-width: 1025px) {
+  .brand__title {
+    font-size: 60px; /* Mantiene el tamaño original */
+    padding: 1rem;
+  }
+
+  .brand__subtitle,
+  .brand__text {
+    margin-left: 1rem; /* Mantiene el margen izquierdo */
+  }
+
+  .branding {
+    margin: 2rem; /* Mantiene el margen */
+    padding: 1rem; /* Mantiene el padding */
+  }
+
+  .branding__title {
+    font-size: 2rem; /* Mantiene el tamaño original */
+  }
+
+  .branding__item {
+    font-size: 1.2rem; /* Mantiene el tamaño original */
+    padding: 0.5rem 0; /* Mantiene el padding original */
+  }
+}
+
+
+
+
+
+
 
 /* lagama */
 #lagama {
@@ -1890,6 +2037,7 @@ body {
   transition: transform 0.5s ease-in-out;
   width: 100%;
   height: 100%;
+  text-align: -webkit-center;
 }
 
 .lagama-item {
@@ -1931,7 +2079,7 @@ body {
 .lagama-navigation__button:hover {
   background-color: rgb(255, 255, 255);
   background-color: #dbdbdb;
-  color:#000;
+  color: #000;
 }
 
 
@@ -1943,8 +2091,79 @@ body {
 .lagama-navigation__button.lagama-navigation__button--next {
   margin-right: 300px;
   font-size: xxx-large;
-  
+
 }
+
+/* media queries */
+/* Para pantallas pequeñas (móviles, menos de 768px) */
+@media (max-width: 768px) {
+  #lagama {
+    width: 100%;
+    /* Ocupa todo el ancho de la pantalla */
+    max-width: none;
+    /* Elimina la restricción de ancho máximo */
+  }
+
+  .lagama-container {
+    flex-direction: column;
+    /* Si quieres cambiar la orientación */
+  }
+
+  .lagama-item img {
+    object-fit: contain;
+    /* Asegura que las imágenes no se recorten */
+  }
+
+  .lagama-navigation {
+    display: none;
+    /* Oculta toda la navegación en móviles */
+  }
+}
+
+/* Para tablets (entre 768px y 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  #lagama {
+    width: 50%;
+    /* Ocupa la mitad del ancho */
+    max-width: 100%;
+    /* Ajusta para adaptarse a tablets */
+  }
+
+  .lagama-navigation {
+    gap: 100px;
+    /* Espaciado intermedio entre botones */
+  }
+
+  .lagama-navigation__button {
+    padding: 10px 15px;
+    /* Botones intermedios */
+    font-size: 1rem;
+    /* Tamaño del texto adecuado */
+  }
+}
+
+/* Para pantallas grandes (más de 1024px) */
+@media (min-width: 1025px) {
+  #lagama {
+    width: 25%;
+    /* Mantiene el ancho original */
+    max-width: 2000px;
+    /* Limita el ancho máximo */
+  }
+
+  .lagama-navigation {
+    gap: 1400px;
+    /* Espaciado amplio entre botones */
+  }
+
+  .lagama-navigation__button {
+    font-size: 1rem;
+
+  }
+}
+
+
+
 
 /* qaiso */
 #qaiso {
@@ -1958,6 +2177,7 @@ body {
   transition: transform 0.5s ease-in-out;
   width: 100%;
   height: 100%;
+  text-align: -webkit-center;
 }
 
 .qaiso-item {
@@ -1971,6 +2191,46 @@ body {
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+/* media queries */
+/* Para pantallas pequeñas (móviles, menos de 768px) */
+@media (max-width: 768px) {
+  #qaiso {
+    width: 88%;
+    max-width: none;
+    margin-left: 0;
+
+  }
+
+  .qaiso-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .qaiso-item {
+    flex: none;
+    /* Ajusta cada imagen para que no se reduzca */
+    width: 90%;
+    /* Reduce ligeramente el ancho de las imágenes */
+    margin-bottom: 20px;
+    /* Espaciado entre imágenes */
+  }
+
+  .qaiso-item img {
+    object-fit: contain;
+    /* Evita recortes en las imágenes */
+    width: 100%;
+    /* Mantén el ancho completo de cada imagen */
+    height: auto;
+    /* Ajusta la altura automáticamente */
+  }
+
+  .qaiso-navigation {
+    display: none;
+    /* Oculta toda la navegación en móviles */
+  }
 }
 
 
@@ -1987,6 +2247,7 @@ body {
   transition: transform 0.5s ease-in-out;
   width: 100%;
   height: 100%;
+  text-align: -webkit-center;
 }
 
 .aguadir-item {
@@ -2027,7 +2288,7 @@ body {
 .aguadir-navigation__button:hover {
   background-color: rgb(255, 255, 255);
   background-color: #dbdbdb;
-  color:#000;
+  color: #000;
 }
 
 
@@ -2039,8 +2300,80 @@ body {
 .aguadir-navigation__button.aguadir-navigation__button--next {
   margin-right: 300px;
   font-size: xxx-large;
-  
+
 }
+
+/* media queries */
+/* Para pantallas pequeñas (móviles, menos de 768px) */
+@media (max-width: 768px) {
+  #aguadir {
+    width: 100%;
+    /* Ocupa todo el ancho de la pantalla */
+    max-width: none;
+    /* Elimina la restricción de ancho máximo */
+  }
+
+  .aguadir-container {
+    flex-direction: column;
+    /* Si quieres cambiar la orientación */
+  }
+
+  .aguadir-item img {
+    object-fit: contain;
+    /* Asegura que las imágenes no se recorten */
+  }
+
+  .aguadir-navigation {
+    display: none;
+    /* Oculta toda la navegación en móviles */
+  }
+}
+
+/* Para tablets (entre 768px y 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  #aguadir {
+    width: 50%;
+    /* Ocupa la mitad del ancho */
+    max-width: 100%;
+    /* Ajusta para adaptarse a tablets */
+  }
+
+  .aguadir-navigation {
+    gap: 100px;
+    /* Espaciado intermedio entre botones */
+  }
+
+  .aguadir-navigation__button {
+    padding: 10px 15px;
+    /* Botones intermedios */
+    font-size: 1rem;
+    /* Tamaño del texto adecuado */
+  }
+}
+
+/* Para pantallas grandes (más de 1024px) */
+@media (min-width: 1025px) {
+  #aguadir {
+    width: 25%;
+    /* Mantiene el ancho original */
+    max-width: 2000px;
+    /* Limita el ancho máximo */
+  }
+
+  .aguadir-navigation {
+    gap: 1400px;
+    /* Espaciado amplio entre botones */
+  }
+
+  .aguadir-navigation__button {
+    font-size: 1rem;
+
+  }
+}
+
+
+
+
 
 /* tridente */
 #tridente {
@@ -2054,6 +2387,7 @@ body {
   transition: transform 0.5s ease-in-out;
   width: 100%;
   height: 100%;
+  text-align: -webkit-center;
 }
 
 .tridente-item {
@@ -2067,6 +2401,46 @@ body {
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+/* media queries */
+/* Para pantallas pequeñas (móviles, menos de 768px) */
+@media (max-width: 768px) {
+  #tridente {
+    width: 88%;
+    max-width: none;
+    margin-left: 0;
+
+  }
+
+  .tridente-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .tridente-item {
+    flex: none;
+    /* Ajusta cada imagen para que no se reduzca */
+    width: 90%;
+    /* Reduce ligeramente el ancho de las imágenes */
+    margin-bottom: 20px;
+    /* Espaciado entre imágenes */
+  }
+
+  .tridente-item img {
+    object-fit: contain;
+    /* Evita recortes en las imágenes */
+    width: 100%;
+    /* Mantén el ancho completo de cada imagen */
+    height: auto;
+    /* Ajusta la altura automáticamente */
+  }
+
+  .tridente-navigation {
+    display: none;
+    /* Oculta toda la navegación en móviles */
+  }
 }
 
 
