@@ -2,54 +2,59 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Porfolio</title>
-  <script defer src="portfolio.js"></script>
-  <link rel="stylesheet" href="portfolio.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porfolio</title>
+    <script defer src="portfolio.js"></script>
+    <link rel="stylesheet" href="portfolio.css">
 </head>
 
 <body>
-  <!-- HEADER -->
-  <header class="header">
-    <div class="header__container">
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header__container">
 
-      <div class="header__logo-container">
-        <a href="index.html" class="header__logo">nacontilde</a>
-      </div>
+            <div class="header__logo-container">
+                <a href="index.html" class="header__logo">nacontilde</a>
+            </div>
 
-      <button class="header__toggle" aria-label="Abrir menú">☰</button>
-      <nav class="header__nav">
-        <ul class="header__menu">
-          <li class="header__menu-item"><a href="About.html" class="header__menu-link">Sobre Mi</a></li>
+            <button class="header__toggle" aria-label="Abrir menú">☰</button>
+            <nav class="header__nav">
+                <ul class="header__menu">
+                    <li class="header__menu-item"><a href="About.html" class="header__menu-link">Sobre Mi</a></li>
 
 
-          <li class="header__menu-item header__menu-item--dropdown">
-            <a href="Servicios.html" class="header__menu-link">Servicios</a>
-            <ul class="header__submenu">
-              <li class="header__submenu-item"><a href="Fotografia.html" class="header__submenu-link">Fotografía</a>
-              </li>
-              <li class="header__submenu-item"><a href="Packaging.html" class="header__submenu-link">Packaging</a></li>
-              <li class="header__submenu-item"><a href="SM.html" class="header__submenu-link">Social
-                  Media</a></li>
-              <li class="header__submenu-item"><a href="Branding.html" class="header__submenu-link">Branding</a></li>
-            </ul>
-          </li>
+                    <li class="header__menu-item header__menu-item--dropdown">
+                        <a href="Servicios.html" class="header__menu-link">Servicios</a>
+                        <ul class="header__submenu">
+                            <li class="header__submenu-item"><a href="Fotografia.html"
+                                    class="header__submenu-link">Fotografía</a>
+                            </li>
+                            <li class="header__submenu-item"><a href="Packaging.html"
+                                    class="header__submenu-link">Packaging</a></li>
+                            <li class="header__submenu-item"><a href="SM.html" class="header__submenu-link">Social
+                                    Media</a></li>
+                            <li class="header__submenu-item"><a href="Branding.html"
+                                    class="header__submenu-link">Branding</a></li>
+                        </ul>
+                    </li>
 
-          <li class="header__menu-item"><a href="Work.html" class="header__menu-link">Work</a></li>
-          <li class="header__menu-item"><a href="Contacto.html" class="header__menu-link">Contacto</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+                    <li class="header__menu-item"><a href="Work.html" class="header__menu-link">Work</a></li>
+                    <li class="header__menu-item"><a href="Contacto.html" class="header__menu-link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
 
     <!-- CUERPO-->
     <section class="packaging">
         <h1 class="packaging__title">PACKAGING</h1>
-        <h2 class="packaging__subtitle">Me encanta explorar la creatividad detrás de un buen diseño de envase que refleja la esencia de la marca.</h2>
-        <p class="packaging__text">Diseño de empaques que no solo protegen el producto, sino que también cuentan una historia y conectan emocionalmente con el consumidor.</p>
-        
+        <h2 class="packaging__subtitle">Me encanta explorar la creatividad detrás de un buen diseño de envase que
+            refleja la esencia de la marca.</h2>
+        <p class="packaging__text">Diseño de empaques que no solo protegen el producto, sino que también cuentan una
+            historia y conectan emocionalmente con el consumidor.</p>
+
     </section>
 
 
@@ -57,42 +62,36 @@
         <div class="work__gallery">
             <div class="work__item">
                 <img class="work__image" src="packaging/caja.jpg" alt="Imagen 1"
-                    onclick="openModal('packaging/caja.jpg', 'Diseño de packaging para marca de algas comestibles ')" />
+                    onclick="openModal('packaging/caja.jpg', 'Diseño de packaging para marca de algas comestibles ')">
                 <div class="work__item">
                     <img class="work__image" src="packaging/packaging.jpg" alt="Imagen 2"
-                        onclick="openModal('packaging/packaging.jpg', 'Diseño de packaging para marca de algas comestibles')" />
+                        onclick="openModal('packaging/packaging.jpg', 'Diseño de packaging para marca de algas comestibles')">
                 </div>
             </div>
 
             <div class="work__item">
                 <img class="work__image" src="packaging/perfume.jpg" alt="Imagen 3"
-                    onclick="openModal('packaging/perfume.jpg', 'Rediseño de packaging perfume ')" />
+                    onclick="openModal('packaging/perfume.jpg', 'Rediseño de packaging perfume ')">
                 <div class="work__item">
                     <img class="work__image" src="packaging/perfumedos.jpg" alt="Imagen 4"
-                        onclick="openModal('packaging/perfumedos.jpg', 'Rediseño de packaging perfume')" />
+                        onclick="openModal('packaging/perfumedos.jpg', 'Rediseño de packaging perfume')">
                 </div>
             </div>
         </div>
+    </div>
 
 
-
-        <div class="modal" id="modal">
-            <div class="modal__content">
-                <button class="modal__close-button" id="modalCloseButton">Cerrar</button>
-                <img class="modal__image" id="modalImage" src="" alt="" />
-                <p class="modal__description" id="modalDescription"></p>
-            </div>
-        </div>
-      
-   
-      <div class="modal" id="modal">
+    <div class="modal" id="modal">
         <div class="modal__content">
             <button class="modal__close-button" id="modalCloseButton">Cerrar</button>
-            <img class="modal__image" id="modalImage" src="" alt="" />
+            <img class="modal__image" id="modalImage" src="placeholder.jpg" alt="Imagen vacia">
             <p class="modal__description" id="modalDescription"></p>
         </div>
     </div>
-      
+
+
+
+
 
 
     <!--FOOTER-->
@@ -110,18 +109,15 @@
             <div class="footer__socials">
                 <a href="https://www.linkedin.com/in/nazaretmateos/" class="footer__social" aria-label="LinkedIn"
                     target="_blank">
-                    <img src="fotos/linkedin.png"
-                        alt="LinkedIn" class="footer__icon">
+                    <img src="fotos/linkedin.png" alt="LinkedIn" class="footer__icon">
                 </a>
                 <a href="https://www.instagram.com/nacontilde/" class="footer__social" aria-label="Instagram"
                     target="_blank">
-                    <img src="fotos/instagram.png"
-                        alt="Instagram" class="footer__icon">
+                    <img src="fotos/instagram.png" alt="Instagram" class="footer__icon">
                 </a>
                 <a href="https://www.behance.net/nazaretmateosgarcia" class="footer__social" aria-label="Behance"
                     target="_blank">
-                    <img src="fotos/Behance-icon-01.png" alt="Behance"
-                        class="footer__icon">
+                    <img src="fotos/Behance-icon-01.png" alt="Behance" class="footer__icon">
                 </a>
             </div>
         </div>
