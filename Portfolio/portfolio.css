@@ -2595,6 +2595,7 @@ body {
   object-fit: cover;
   border-radius: 10px;
   transition: transform 0.3s ease, opacity 0.3s ease;
+  width: 20%;
 }
 
 .work__item:hover .work__image {
