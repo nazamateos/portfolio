@@ -739,68 +739,7 @@ body {
 }
 
 
-/* Parallax  */
-.parallax {
-  position: relative;
-  height: 200px;
-  background-image: url('fotos/hormigon.jpg');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
-.parallax__content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-  font-size: 2rem;
-  font-weight: bold;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
-}
-
-/* Media Queries */
-
-/* Pantallas pequeñas (móviles, menos de 768px) */
-@media (max-width: 768px) {
-  .parallax {
-    height: 150px;
-    background-attachment: scroll;
-  }
-
-  .parallax__content {
-    font-size: 1.5rem;
-  }
-}
-
-/* Tablets (entre 768px y 1024px) */
-@media (min-width: 768px) and (max-width: 1024px) {
-  .parallax {
-    height: 180px;
-    background-attachment: fixed;
-    background-size: cover;
-  }
-
-  .parallax__content {
-    font-size: 1.8rem;
-  }
-}
-
-/* Pantallas grandes (más de 1024px) */
-@media (min-width: 1025px) {
-  .parallax {
-    height: 300px;
-    background-attachment: fixed;
-    background-size: cover;
-  }
-
-  .parallax__content {
-    font-size: 2.5rem;
-  }
-}
 
 
 
