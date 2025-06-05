@@ -305,52 +305,6 @@ body {
   }
 }
 
-
-.intro__pregunta {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 8rem;
-
-}
-
-.intro__boton {
-  font-size: 20px;
-  color: #000000;
-  align-self: center;
-  padding: 0.8rem 1.5rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
-}
-
-.intro__botones {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
-
-
-.intro__boton--yes {
-  background-color: #5e5e5e;
-  color: #fff;
-}
-
-.intro__boton--yes:hover {
-  background-color: #888888;
-}
-
-.intro__boton--no {
-  background-color: #5e5e5e;
-  ;
-  color: #fff;
-}
-
-.intro__boton--no:hover {
-  background-color: #888888;
-}
-
 .alert-container {
   display: none;
 

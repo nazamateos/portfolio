@@ -12,29 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-// ALERTA INTRO
-function handleButtonClick(response) {
-  const alertContainer = document.getElementById('alert-container');
-  const alertText = document.getElementById('alert-text');
-
-
-  if (response === 'yes') {
-    alertText.textContent = 'Bienvenido! Espero sorprenderte y que nos volvamos a ver😉';
-  } else if (response === 'no') {
-    alertText.textContent = '¡Me alegra verte de vuelta!😎 Siempre es un placer tenerte por aquí.';
-  }
-
-
-  alertContainer.style.display = 'block';
-}
-
-
-function closeAlert() {
-  const alertContainer = document.getElementById('alert-container');
-  alertContainer.style.display = 'none';
-}
-
-
 
 // SOBRE MI
 document.addEventListener("DOMContentLoaded", () => {
