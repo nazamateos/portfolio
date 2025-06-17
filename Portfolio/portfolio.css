@@ -269,90 +269,6 @@ body {
   }
 }
 
-.intro__subtitulo {
-  font-size: 2rem;
-  color: #555555;
-  margin-top: 1rem;
-  font-style: italic;
-  justify-self: center;
-}
-
-.intro__scroll {
-  position: static;
-  bottom: 10px;
-  font-size: 3rem;
-  color: #555555;
-  font-size: 2rem;
-  animation: bounce 2s infinite;
-}
-
-@keyframes bounce {
-
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
-    transform: translateY(0);
-  }
-
-  40% {
-    transform: translateY(-10px);
-  }
-
-  60% {
-    transform: translateY(-5px);
-  }
-}
-
-.alert-container {
-  display: none;
-
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #fff;
-  padding: 1.5rem 2rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 8px;
-  z-index: 1000;
-  text-align: center;
-  width: 300px;
-}
-
-.alert-text {
-  font-size: 1rem;
-  margin-bottom: 1rem;
-}
-
-.alert-close {
-  padding: 0.5rem 1rem;
-  font-size: 0.9rem;
-  background-color: #888888;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.alert-close:hover {
-  background-color: #888888;
-}
-
-.alert-overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 99;
-}
-
-
-
 
 .metodologia__titulo {
   font-size: 2rem;
@@ -2956,7 +2872,7 @@ body {
 }
 
 .footer__link:hover {
-  color: #888888;
+  color: #426DCE;
 
 }
 
